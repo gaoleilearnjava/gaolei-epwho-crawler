@@ -23,6 +23,7 @@ public class ProductPipeline implements Pipeline {
     @Override
     public void process(ResultItems resultItems, Task task) {
         List<Product> products = resultItems.get("products");
-        if (products.size() != 0) products.forEach(productService::addProduct);
+        if ((products != null) && (products.size() > 1)) products.forEach(productService::addProduct);
+        else if ((products != null) && products.size() == 1) productService.updateProduct(products.get(0));
     }
 }

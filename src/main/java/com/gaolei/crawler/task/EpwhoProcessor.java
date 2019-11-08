@@ -145,32 +145,44 @@ public class EpwhoProcessor implements PageProcessor {
         product.setProduct_dtl_status(1);
         //设置产品来源
         product.setProduct_source(0);
-        //设置产品更新时间
-        String updateTime = node.xpath("//div[3]/table//table//tr[11]/td[2]/text()").toString();
-        product.setUpdate_time(updateTime);
         //设置产品品牌
         String productBrand = node.xpath("//div[3]/table//table//tr[2]/td[2]/text()").toString();
         product.setProduct_brand(productBrand);
         //设置产品详情
         String detail = node.xpath("//div[5]/div/div").toString();
         product.setProduct_detail(detail);
-        //设置产品价格
-        String price = node.xpath("//div[3]/table//table//tr[6]/td[2]/text()").toString();
-        product.setProduct_price(price);
-        //设置产品最小订购量
-        String minOrder = node.xpath("//div[3]/table//table//tr[7]/td[2]/text()").toString();
-        product.setProduct_min_ordered(minOrder);
-        //设置产品供货量
-        String supply = node.xpath("//div[3]/table//table//tr[8]/td[2]/text()").toString();
-        product.setProduct_supply(supply);
-        //设置产品发货期限
-        String sendTerm = node.xpath("//div[3]/table//table//tr[9]/td[2]/text()").toString();
-        product.setProduct_send_term(sendTerm);
-        //设置产品有效期
-        String validTerm = node.xpath("//div[3]/table//table//tr[10]/td[2]/text()").toString();
-        product.setProduct_valid_term(validTerm);
 
-        page.putField("product", product);
+
+        List<Selectable> list = page.getHtml().xpath("//*[@id=\"main\"]/div[3]/table/tbody/tr/td[3]/table/tbody/tr").nodes();
+        for (Selectable s : list) {
+            String name = s.xpath("//td[1]/text()").toString();
+
+            if(name.startsWith("产品"))
+            {
+                String value = s.xpath("//td[2]/h1/text()").toString();
+            }else{
+                String value = s.xpath("//td[2]/text()").toString();
+                if(name.startsWith("品牌")){
+                    product.setProduct_brand(value);
+                }else if(name.startsWith("单价")){
+                    product.setProduct_price(value);
+                }else if(name.startsWith("最小起订量")){
+                    product.setProduct_min_ordered(value);
+                }else if(name.startsWith("供货总量")){
+                    product.setProduct_supply(value);
+                }else if(name.startsWith("发货期限")){
+                    value = s.xpath("//td[2]").toString().replaceAll("</?[^<]+>","").replaceAll("&nbsp;","").replaceAll(" ","");
+                    product.setProduct_send_term(value);
+                }else if(name.startsWith("有效期至")){
+                    product.setProduct_valid_term(value);
+                } else if (name.startsWith("最后更新")) {
+                    product.setUpdate_time(value);
+                }
+            }
+        }
+        List<Product> products = new ArrayList<>();
+        products.add(product);
+        page.putField("products", products);
     }
 
     @Override
