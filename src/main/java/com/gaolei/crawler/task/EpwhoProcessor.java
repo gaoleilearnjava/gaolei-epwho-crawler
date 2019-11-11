@@ -145,11 +145,8 @@ public class EpwhoProcessor implements PageProcessor {
         product.setProduct_dtl_status(1);
         //设置产品来源
         product.setProduct_source(0);
-        //设置产品品牌
-        String productBrand = node.xpath("//div[3]/table//table//tr[2]/td[2]/text()").toString();
-        product.setProduct_brand(productBrand);
         //设置产品详情
-        String detail = node.xpath("//div[5]/div/div").toString();
+        String detail = node.xpath("//div[5]/*[@class='content']").toString();
         product.setProduct_detail(detail);
 
 
@@ -197,7 +194,7 @@ public class EpwhoProcessor implements PageProcessor {
     @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
     public void process() {
         logger.info("第一环保网-商城产品列表任务开始执行...");
-        String url = "http://www.epwho.com/sell/index_1.html";
+        String url = "http://www.epwho.com/sell/index_109.html";
         Spider.create(new EpwhoProcessor())
                 .addUrl(url)//添加网址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列

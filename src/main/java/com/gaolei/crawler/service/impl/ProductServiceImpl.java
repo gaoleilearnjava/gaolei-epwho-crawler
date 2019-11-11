@@ -5,8 +5,10 @@ import com.gaolei.crawler.pojo.Product;
 import com.gaolei.crawler.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.*;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -47,5 +49,18 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     public void updateProduct(Product product) {
         productDao.updateById(product);
+    }
+
+    @Transactional
+    public void findOne() {
+        Specification<Product> spec = new Specification<Product>() {
+            @Override
+            public Predicate toPredicate(Root<Product> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+                Path<Object> product_id = root.get("product_id");
+                Predicate predicate = criteriaBuilder.equal(product_id, "sfsffffffff");
+                return predicate;
+            }
+        };
+        Product product = productDao.findOne(spec).get();
     }
 }

@@ -2,6 +2,7 @@ package com.gaolei.crawler.dao;
 
 import com.gaolei.crawler.pojo.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -13,7 +14,7 @@ import javax.transaction.Transactional;
  * @version 1.0
  * @date 2019/11/6 15:37
  */
-public interface ProductDao extends JpaRepository<Product, String> {
+public interface ProductDao extends JpaRepository<Product, String> , JpaSpecificationExecutor<Product> {
 
     //根据商品详情页地址确定商品并更新商品
     @Modifying
