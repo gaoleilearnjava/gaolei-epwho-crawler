@@ -5,6 +5,7 @@ import com.gaolei.crawler.pojo.HbProduct;
 import com.gaolei.crawler.service.HbProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @version 1.0
  * @date 2019/11/13 11:46
  */
+@Service
 public class HbProductServiceImpl implements HbProductService {
     @Autowired
     private HbProductDao hbProductDao;
