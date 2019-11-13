@@ -20,7 +20,7 @@ public class Product {
     /*CREATE TABLE `store_epwho_product` (
   `product_id` varchar(32) NOT NULL COMMENT '主键ID',
   `product_name` varchar(100) DEFAULT NULL COMMENT '商品名称',
-  `product_pic` varchar(200) DEFAULT NULL COMMENT '商品图片',
+   `product_pic` varchar(200) DEFAULT NULL COMMENT '商品图片',
   `product_type` varchar(50) DEFAULT NULL COMMENT '商品类型',
   `product_company` varchar(100) DEFAULT NULL COMMENT '所属企业',
   `product_profile` text COMMENT '商品简介',

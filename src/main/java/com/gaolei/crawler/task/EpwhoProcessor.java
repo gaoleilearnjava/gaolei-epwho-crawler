@@ -194,12 +194,12 @@ public class EpwhoProcessor implements PageProcessor {
     @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
     public void process() {
         logger.info("第一环保网-商城产品列表任务开始执行...");
-        String url = "http://www.epwho.com/sell/index_109.html";
+        String url = "http://www.epwho.com/sell/index_1.html";
         Spider.create(new EpwhoProcessor())
                 .addUrl(url)//添加网址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
                 .addPipeline(productPipeline)//添加pipeline
-                .thread(2)//设置多线程
+                .thread(3)//设置多线程
                 .run();//启动
     }
 
