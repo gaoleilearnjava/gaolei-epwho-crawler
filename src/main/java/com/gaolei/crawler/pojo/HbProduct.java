@@ -14,7 +14,7 @@ import javax.persistence.Table;
  * @date 2019/11/13 11:22
  */
 @Entity
-@Table(name = "store_epwho_product")
+@Table(name = "hbzhan_store_products")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -54,9 +54,8 @@ public class HbProduct {
     private String product_pic3;
     private String product_pic4;
     private String product_pic5;
-
     private String product_type;
-
+    private String product_company;
     private String product_profile;
     private String product_detail;
     private String create_time;
@@ -68,5 +67,5 @@ public class HbProduct {
     private String product_location;
     private String product_price;
     private String product_dtl_url;
-    private byte product_source;
+    private int product_source;
 }

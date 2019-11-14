@@ -5,14 +5,10 @@ import com.gaolei.crawler.pojo.Product;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
-import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
-import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 
@@ -191,17 +187,17 @@ public class EpwhoProcessor implements PageProcessor {
     //也可以改成用网页来执行的,使用controller
     //@Scheduled(cron = "0 0 * * * ?")
     //测试使用,立马执行
-    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
-    public void process() {
-        logger.info("第一环保网-商城产品列表任务开始执行...");
-        String url = "http://www.epwho.com/sell/index_1.html";
-        Spider.create(new EpwhoProcessor())
-                .addUrl(url)//添加网址
-                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
-                .addPipeline(productPipeline)//添加pipeline
-                .thread(3)//设置多线程
-                .run();//启动
-    }
+//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
+//    public void process() {
+//        logger.info("第一环保网-商城产品列表任务开始执行...");
+//        String url = "http://www.epwho.com/sell/index_1.html";
+//        Spider.create(new EpwhoProcessor())
+//                .addUrl(url)//添加网址
+//                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
+//                .addPipeline(productPipeline)//添加pipeline
+//                .thread(3)//设置多线程
+//                .run();//启动
+//    }
 
 
 }
