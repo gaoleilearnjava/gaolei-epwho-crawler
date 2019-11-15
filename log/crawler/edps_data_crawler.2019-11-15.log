@@ -1,0 +1,872 @@
+2019-11-15 09:19:24.169 [main] INFO  com.gaolei.crawler.CrawlerApplication - Starting CrawlerApplication on GaoLei with PID 25964 (E:\JavaProgram\gaolei-epwho-crawler\target\classes started by Administrator in E:\JavaProgram\gaolei-epwho-crawler)
+2019-11-15 09:19:24.174 [main] INFO  com.gaolei.crawler.CrawlerApplication - No active profile set, falling back to default profiles: default
+2019-11-15 09:19:25.128 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 09:19:25.213 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77ms. Found 2 repository interfaces.
+2019-11-15 09:19:25.601 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6adca380] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 09:19:25.947 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-11-15 09:19:25.961 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-11-15 09:19:25.971 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-15 09:19:25.971 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-11-15 09:19:26.082 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-15 09:19:26.082 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1808 ms
+2019-11-15 09:19:26.347 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-11-15 09:19:26.621 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 09:19:26.680 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-11-15 09:19:26.681 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-11-15 09:19:26.797 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-15 09:19:26.967 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 09:19:27.588 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 09:19:27.906 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-15 09:19:28.349 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 09:19:28.384 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-15 09:19:28.526 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-11-15 09:19:28.582 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-11-15 09:19:28.615 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-11-15 09:19:28.617 [main] INFO  com.gaolei.crawler.CrawlerApplication - Started CrawlerApplication in 5.486 seconds (JVM running for 7.328)
+2019-11-15 09:19:29.581 [scheduling-1] INFO  com.gaolei.crawler.task.EpwhoProcessor - 环保在线-商城产品列表任务开始执行...
+2019-11-15 09:19:29.618 [scheduling-1] INFO  us.codecraft.webmagic.Spider - Spider www.hbzhan.com started!
+2019-11-15 09:19:31.069 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/product/newtype.html
+2019-11-15 09:19:31.658 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7730.html
+2019-11-15 09:19:31.724 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7710.html
+2019-11-15 09:19:31.750 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7720.html
+2019-11-15 09:19:31.762 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7692.html
+2019-11-15 09:19:31.941 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7738.html
+2019-11-15 09:19:32.209 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7762.html
+2019-11-15 09:19:32.324 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7782.html
+2019-11-15 09:19:32.335 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7750.html
+2019-11-15 09:19:32.534 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7794.html
+2019-11-15 09:19:32.635 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7774.html
+2019-11-15 09:19:32.769 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7871.html
+2019-11-15 09:19:32.777 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7812.html
+2019-11-15 09:19:32.993 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7886.html
+2019-11-15 09:19:33.030 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7906.html
+2019-11-15 09:19:33.400 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7947.html
+2019-11-15 09:19:33.439 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7980.html
+2019-11-15 09:19:33.441 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8017.html
+2019-11-15 09:19:33.460 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7920.html
+2019-11-15 09:19:33.489 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7968.html
+2019-11-15 09:19:33.877 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8041.html
+2019-11-15 09:19:33.909 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8030.html
+2019-11-15 09:19:34.022 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9077.html
+2019-11-15 09:19:34.144 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9092.html
+2019-11-15 09:19:34.217 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8052.html
+2019-11-15 09:19:34.353 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8060.html
+2019-11-15 09:19:34.377 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8071.html
+2019-11-15 09:19:34.511 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8085.html
+2019-11-15 09:19:34.726 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20365.html
+2019-11-15 09:19:34.729 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8095.html
+2019-11-15 09:19:34.984 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7825.html
+2019-11-15 09:19:35.031 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10396.html
+2019-11-15 09:19:35.040 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8000.html
+2019-11-15 09:19:35.216 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10397.html
+2019-11-15 09:19:35.281 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10398.html
+2019-11-15 09:19:35.473 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10399.html
+2019-11-15 09:19:35.559 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10400.html
+2019-11-15 09:19:35.582 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10515.html
+2019-11-15 09:19:35.712 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10254.html
+2019-11-15 09:19:35.902 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10255.html
+2019-11-15 09:19:36.011 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10258.html
+2019-11-15 09:19:36.142 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10256.html
+2019-11-15 09:19:36.191 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10257.html
+2019-11-15 09:19:36.207 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10259.html
+2019-11-15 09:19:36.408 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10260.html
+2019-11-15 09:19:36.644 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10261.html
+2019-11-15 09:19:36.711 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10244.html
+2019-11-15 09:19:36.729 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10262.html
+2019-11-15 09:19:36.773 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8454.html
+2019-11-15 09:19:36.885 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10597.html
+2019-11-15 09:19:37.139 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8158.html
+2019-11-15 09:19:37.166 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8105.html
+2019-11-15 09:19:37.240 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8124.html
+2019-11-15 09:19:37.277 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8139.html
+2019-11-15 09:19:37.478 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8169.html
+2019-11-15 09:19:37.650 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8181.html
+2019-11-15 09:19:37.708 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8170.html
+2019-11-15 09:19:37.770 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8192.html
+2019-11-15 09:19:37.780 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8228.html
+2019-11-15 09:19:37.971 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8212.html
+2019-11-15 09:19:38.157 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20456.html
+2019-11-15 09:19:38.199 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8249.html
+2019-11-15 09:19:38.295 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8203.html
+2019-11-15 09:19:38.408 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8287.html
+2019-11-15 09:19:38.518 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20457.html
+2019-11-15 09:19:38.595 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20459.html
+2019-11-15 09:19:38.612 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20458.html
+2019-11-15 09:19:38.704 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20460.html
+2019-11-15 09:19:38.898 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20461.html
+2019-11-15 09:19:38.997 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20463.html
+2019-11-15 09:19:39.081 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20464.html
+2019-11-15 09:19:39.188 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8308.html
+2019-11-15 09:19:39.243 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20462.html
+2019-11-15 09:19:39.454 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8326.html
+2019-11-15 09:19:39.523 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8341.html
+2019-11-15 09:19:39.602 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8357.html
+2019-11-15 09:19:39.711 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8372.html
+2019-11-15 09:19:39.810 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8640.html
+2019-11-15 09:19:39.853 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9427.html
+2019-11-15 09:19:39.854 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9427.html , code: 503
+2019-11-15 09:19:39.910 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8681.html
+2019-11-15 09:19:39.969 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8663.html
+2019-11-15 09:19:40.015 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9484.html
+2019-11-15 09:19:40.016 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9484.html , code: 503
+2019-11-15 09:19:40.053 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9442.html
+2019-11-15 09:19:40.054 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9442.html , code: 503
+2019-11-15 09:19:40.069 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9505.html
+2019-11-15 09:19:40.191 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9465.html
+2019-11-15 09:19:40.236 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8416.html
+2019-11-15 09:19:40.236 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8416.html , code: 503
+2019-11-15 09:19:40.328 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9450.html
+2019-11-15 09:19:40.380 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8435.html
+2019-11-15 09:19:40.380 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8435.html , code: 503
+2019-11-15 09:19:40.405 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9474.html
+2019-11-15 09:19:40.415 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8887.html
+2019-11-15 09:19:40.415 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8887.html , code: 503
+2019-11-15 09:19:40.448 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8901.html
+2019-11-15 09:19:40.449 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8901.html , code: 503
+2019-11-15 09:19:40.451 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8396.html
+2019-11-15 09:19:40.581 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8708.html
+2019-11-15 09:19:40.627 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8955.html
+2019-11-15 09:19:40.628 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8955.html , code: 503
+2019-11-15 09:19:40.786 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8376.html
+2019-11-15 09:19:40.829 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8991.html
+2019-11-15 09:19:40.829 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8991.html , code: 503
+2019-11-15 09:19:40.921 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9344.html
+2019-11-15 09:19:40.943 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8933.html
+2019-11-15 09:19:41.005 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8920.html
+2019-11-15 09:19:41.106 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8971.html
+2019-11-15 09:19:41.291 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9007.html
+2019-11-15 09:19:41.291 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9007.html , code: 503
+2019-11-15 09:19:41.451 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9005.html
+2019-11-15 09:19:41.496 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9004.html
+2019-11-15 09:19:41.562 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9006.html
+2019-11-15 09:19:41.571 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10348.html
+2019-11-15 09:19:41.617 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8752.html
+2019-11-15 09:19:41.617 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8752.html , code: 503
+2019-11-15 09:19:41.667 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8761.html
+2019-11-15 09:19:41.667 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8761.html , code: 503
+2019-11-15 09:19:41.854 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10349.html
+2019-11-15 09:19:41.994 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10350.html
+2019-11-15 09:19:42.010 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8736.html
+2019-11-15 09:19:42.056 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8724.html
+2019-11-15 09:19:42.223 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8771.html
+2019-11-15 09:19:42.439 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8778.html
+2019-11-15 09:19:42.491 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8784.html
+2019-11-15 09:19:42.547 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8794.html
+2019-11-15 09:19:42.591 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8808.html
+2019-11-15 09:19:42.633 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8872.html
+2019-11-15 09:19:42.633 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8872.html , code: 503
+2019-11-15 09:19:42.783 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8817.html
+2019-11-15 09:19:42.828 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9213.html
+2019-11-15 09:19:42.828 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9213.html , code: 503
+2019-11-15 09:19:42.983 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8827.html
+2019-11-15 09:19:43.026 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10197.html
+2019-11-15 09:19:43.026 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-10197.html , code: 503
+2019-11-15 09:19:43.059 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10211.html
+2019-11-15 09:19:43.059 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-10211.html , code: 503
+2019-11-15 09:19:43.130 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9212.html
+2019-11-15 09:19:43.173 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8508.html
+2019-11-15 09:19:43.173 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8508.html , code: 503
+2019-11-15 09:19:43.207 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8518.html
+2019-11-15 09:19:43.208 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8518.html , code: 503
+2019-11-15 09:19:43.243 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8525.html
+2019-11-15 09:19:43.243 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8525.html , code: 503
+2019-11-15 09:19:43.320 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8847.html
+2019-11-15 09:19:43.355 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8859.html
+2019-11-15 09:19:43.396 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-10178.html
+2019-11-15 09:19:43.440 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9584.html
+2019-11-15 09:19:43.440 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9584.html , code: 503
+2019-11-15 09:19:43.675 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8503.html
+2019-11-15 09:19:43.781 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8983.html
+2019-11-15 09:19:43.850 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8535.html
+2019-11-15 09:19:43.881 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9059.html
+2019-11-15 09:19:43.938 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9068.html
+2019-11-15 09:19:43.983 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9382.html
+2019-11-15 09:19:43.983 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9382.html , code: 503
+2019-11-15 09:19:44.023 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8551.html
+2019-11-15 09:19:44.023 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8551.html , code: 503
+2019-11-15 09:19:44.063 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-20322.html
+2019-11-15 09:19:44.063 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-20322.html , code: 503
+2019-11-15 09:19:44.122 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9181.html
+2019-11-15 09:19:44.166 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9230.html
+2019-11-15 09:19:44.166 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9230.html , code: 503
+2019-11-15 09:19:44.202 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9231.html
+2019-11-15 09:19:44.202 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9231.html , code: 503
+2019-11-15 09:19:44.236 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9232.html
+2019-11-15 09:19:44.236 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9232.html , code: 503
+2019-11-15 09:19:44.310 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8549.html
+2019-11-15 09:19:44.404 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9144.html
+2019-11-15 09:19:44.448 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9235.html
+2019-11-15 09:19:44.448 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9235.html , code: 503
+2019-11-15 09:19:44.463 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8550.html
+2019-11-15 09:19:44.556 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9229.html
+2019-11-15 09:19:44.601 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9224.html
+2019-11-15 09:19:44.601 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-9224.html , code: 503
+2019-11-15 09:19:44.610 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9233.html
+2019-11-15 09:19:44.649 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8615.html
+2019-11-15 09:19:44.649 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-8615.html , code: 503
+2019-11-15 09:19:44.651 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5877.html
+2019-11-15 09:19:44.651 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5877.html , code: 503
+2019-11-15 09:19:44.686 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5754.html
+2019-11-15 09:19:44.686 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5754.html , code: 503
+2019-11-15 09:19:44.719 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5786.html
+2019-11-15 09:19:44.719 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5786.html , code: 503
+2019-11-15 09:19:44.888 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9234.html
+2019-11-15 09:19:44.924 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-9236.html
+2019-11-15 09:19:44.979 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-8692.html
+2019-11-15 09:19:44.991 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5870.html
+2019-11-15 09:19:44.991 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5870.html , code: 503
+2019-11-15 09:19:45.027 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5874.html
+2019-11-15 09:19:45.027 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5874.html , code: 503
+2019-11-15 09:19:45.048 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5876.html
+2019-11-15 09:19:45.060 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5875.html
+2019-11-15 09:19:45.060 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5875.html , code: 503
+2019-11-15 09:19:45.099 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5839.html
+2019-11-15 09:19:45.099 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5839.html , code: 503
+2019-11-15 09:19:45.134 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5865.html
+2019-11-15 09:19:45.134 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5865.html , code: 503
+2019-11-15 09:19:45.172 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5864.html
+2019-11-15 09:19:45.172 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5864.html , code: 503
+2019-11-15 09:19:45.205 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5868.html
+2019-11-15 09:19:45.205 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5868.html , code: 503
+2019-11-15 09:19:45.241 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5869.html
+2019-11-15 09:19:45.241 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5869.html , code: 503
+2019-11-15 09:19:45.336 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5873.html
+2019-11-15 09:19:45.463 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5872.html
+2019-11-15 09:19:45.576 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5871.html
+2019-11-15 09:19:45.618 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5753.html
+2019-11-15 09:19:45.663 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5866.html
+2019-11-15 09:19:45.663 [pool-1-thread-2] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5866.html , code: 503
+2019-11-15 09:19:45.713 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5862.html
+2019-11-15 09:19:45.873 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5863.html
+2019-11-15 09:19:46.110 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5861.html
+2019-11-15 09:19:46.179 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5867.html
+2019-11-15 09:19:46.208 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5817.html
+2019-11-15 09:19:46.249 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5840.html
+2019-11-15 09:19:46.350 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5816.html
+2019-11-15 09:19:46.391 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5814.html
+2019-11-15 09:19:46.392 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5814.html , code: 503
+2019-11-15 09:19:46.426 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5810.html
+2019-11-15 09:19:46.426 [pool-1-thread-4] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5810.html , code: 503
+2019-11-15 09:19:46.656 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5813.html
+2019-11-15 09:19:46.691 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5812.html
+2019-11-15 09:19:46.761 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5811.html
+2019-11-15 09:19:46.979 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5799.html
+2019-11-15 09:19:47.003 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5815.html
+2019-11-15 09:19:47.047 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5806.html
+2019-11-15 09:19:47.048 [pool-1-thread-1] INFO  us.codecraft.webmagic.Spider - page status code error, page http://www.hbzhan.com/chanpin-5806.html , code: 503
+2019-11-15 09:19:47.398 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5800.html
+2019-11-15 09:19:47.410 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5773.html
+2019-11-15 09:19:47.455 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5729.html
+2019-11-15 09:19:47.638 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5804.html
+2019-11-15 09:19:47.893 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5805.html
+2019-11-15 09:19:47.980 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5802.html
+2019-11-15 09:19:48.006 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5730.html
+2019-11-15 09:19:48.207 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5732.html
+2019-11-15 09:19:48.339 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5733.html
+2019-11-15 09:19:48.695 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5738.html
+2019-11-15 09:19:48.767 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5728.html
+2019-11-15 09:19:48.934 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5770.html
+2019-11-15 09:19:48.986 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5731.html
+2019-11-15 09:19:49.083 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5771.html
+2019-11-15 09:19:49.237 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5734.html
+2019-11-15 09:19:49.289 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5735.html
+2019-11-15 09:19:49.469 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5736.html
+2019-11-15 09:19:49.775 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5737.html
+2019-11-15 09:19:49.829 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5727.html
+2019-11-15 09:19:49.847 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5772.html
+2019-11-15 09:19:49.853 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5801.html
+2019-11-15 09:19:50.031 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5803.html
+2019-11-15 09:19:50.359 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5797.html
+2019-11-15 09:19:50.438 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5782.html
+2019-11-15 09:19:50.544 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5726.html
+2019-11-15 09:19:50.592 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5798.html
+2019-11-15 09:19:50.760 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7545.html
+2019-11-15 09:19:50.942 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5767.html
+2019-11-15 09:19:51.048 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5764.html
+2019-11-15 09:19:51.174 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5763.html
+2019-11-15 09:19:51.280 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5768.html
+2019-11-15 09:19:51.357 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5761.html
+2019-11-15 09:19:51.546 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5766.html
+2019-11-15 09:19:51.689 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5762.html
+2019-11-15 09:19:51.867 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5742.html
+2019-11-15 09:19:51.894 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5743.html
+2019-11-15 09:19:51.934 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5741.html
+2019-11-15 09:19:52.351 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5740.html
+2019-11-15 09:19:52.394 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5769.html
+2019-11-15 09:19:52.598 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5744.html
+2019-11-15 09:19:52.623 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7459.html
+2019-11-15 09:19:52.680 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7460.html
+2019-11-15 09:19:52.863 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7461.html
+2019-11-15 09:19:52.996 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7462.html
+2019-11-15 09:19:53.120 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5747.html
+2019-11-15 09:19:53.205 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5765.html
+2019-11-15 09:19:53.244 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7463.html
+2019-11-15 09:19:53.425 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5748.html
+2019-11-15 09:19:53.463 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5745.html
+2019-11-15 09:19:53.726 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5746.html
+2019-11-15 09:19:53.818 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5749.html
+2019-11-15 09:19:53.821 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5739.html
+2019-11-15 09:19:54.005 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5750.html
+2019-11-15 09:19:54.073 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5760.html
+2019-11-15 09:19:54.204 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5809.html
+2019-11-15 09:19:54.443 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5807.html
+2019-11-15 09:19:54.555 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5808.html
+2019-11-15 09:19:54.609 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5783.html
+2019-11-15 09:19:54.616 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5725.html
+2019-11-15 09:19:54.750 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5856.html
+2019-11-15 09:19:55.162 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5724.html
+2019-11-15 09:19:55.195 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5834.html
+2019-11-15 09:19:55.199 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5855.html
+2019-11-15 09:19:55.238 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5832.html
+2019-11-15 09:19:55.267 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5833.html
+2019-11-15 09:19:55.650 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7387.html
+2019-11-15 09:19:55.720 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5831.html
+2019-11-15 09:19:55.779 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5722.html
+2019-11-15 09:19:55.783 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7386.html
+2019-11-15 09:19:55.935 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5830.html
+2019-11-15 09:19:56.206 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5775.html
+2019-11-15 09:19:56.232 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5776.html
+2019-11-15 09:19:56.290 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5777.html
+2019-11-15 09:19:56.296 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5723.html
+2019-11-15 09:19:56.453 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5778.html
+2019-11-15 09:19:56.754 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5779.html
+2019-11-15 09:19:56.775 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5774.html
+2019-11-15 09:19:56.855 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5824.html
+2019-11-15 09:19:56.903 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5825.html
+2019-11-15 09:19:57.238 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5823.html
+2019-11-15 09:19:57.291 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5822.html
+2019-11-15 09:19:57.445 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5821.html
+2019-11-15 09:19:57.463 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5819.html
+2019-11-15 09:19:57.550 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5820.html
+2019-11-15 09:19:57.825 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5818.html
+2019-11-15 09:19:57.912 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5845.html
+2019-11-15 09:19:58.032 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5843.html
+2019-11-15 09:19:58.096 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5846.html
+2019-11-15 09:19:58.103 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5844.html
+2019-11-15 09:19:58.431 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5827.html
+2019-11-15 09:19:58.554 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5751.html
+2019-11-15 09:19:58.557 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5842.html
+2019-11-15 09:19:58.681 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5826.html
+2019-11-15 09:19:58.779 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5752.html
+2019-11-15 09:19:58.885 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5838.html
+2019-11-15 09:19:59.081 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5837.html
+2019-11-15 09:19:59.145 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5758.html
+2019-11-15 09:19:59.226 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5859.html
+2019-11-15 09:19:59.426 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5757.html
+2019-11-15 09:19:59.492 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5756.html
+2019-11-15 09:19:59.699 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5759.html
+2019-11-15 09:19:59.725 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5836.html
+2019-11-15 09:20:00.043 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5841.html
+2019-11-15 09:20:00.054 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5857.html
+2019-11-15 09:20:00.115 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5860.html
+2019-11-15 09:20:00.288 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5835.html
+2019-11-15 09:20:00.340 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5829.html
+2019-11-15 09:20:00.567 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5854.html
+2019-11-15 09:20:00.682 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5828.html
+2019-11-15 09:20:00.765 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5852.html
+2019-11-15 09:20:00.817 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5784.html
+2019-11-15 09:20:00.849 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5849.html
+2019-11-15 09:20:01.055 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5850.html
+2019-11-15 09:20:01.094 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5787.html
+2019-11-15 09:20:01.324 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5851.html
+2019-11-15 09:20:01.385 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5848.html
+2019-11-15 09:20:01.430 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5847.html
+2019-11-15 09:20:01.527 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5794.html
+2019-11-15 09:20:01.889 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5785.html
+2019-11-15 09:20:01.920 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5796.html
+2019-11-15 09:20:02.115 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5781.html
+2019-11-15 09:20:02.132 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5791.html
+2019-11-15 09:20:02.145 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5795.html
+2019-11-15 09:20:02.527 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5789.html
+2019-11-15 09:20:02.717 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5790.html
+2019-11-15 09:20:02.771 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7520.html
+2019-11-15 09:20:02.775 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5755.html
+2019-11-15 09:20:02.984 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5788.html
+2019-11-15 09:20:03.044 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-5780.html
+2019-11-15 09:20:03.276 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7629.html
+2019-11-15 09:20:03.384 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7604.html
+2019-11-15 09:20:03.386 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7616.html
+2019-11-15 09:20:04.392 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603388/product_19542563.html
+2019-11-15 09:20:04.813 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st111233/product_19711228.html
+2019-11-15 09:20:04.837 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614750/product_19694093.html
+2019-11-15 09:20:05.415 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603169/product_19587777.html
+2019-11-15 09:20:05.481 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st84260/product_19043394.html
+2019-11-15 09:20:06.192 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67277/product_18969657.html
+2019-11-15 09:20:06.302 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st1266/product_19584761.html
+2019-11-15 09:20:06.760 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st590989/product_19564149.html
+2019-11-15 09:20:07.425 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609023/product_19121487.html
+2019-11-15 09:20:07.778 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st23589/product_517640.html
+2019-11-15 09:20:07.868 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603131/product_19491519.html
+2019-11-15 09:20:07.892 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st561896/product_19480020.html
+2019-11-15 09:20:08.482 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613906/product_19468228.html
+2019-11-15 09:20:08.720 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st582541/product_19480689.html
+2019-11-15 09:20:09.830 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st88004/product_19377714.html
+2019-11-15 09:20:09.878 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st40433/product_6179041.html
+2019-11-15 09:20:09.912 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st548272/product_13933050.html
+2019-11-15 09:20:10.000 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st549555/product_19414622.html
+2019-11-15 09:20:10.584 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610014/product_19439288.html
+2019-11-15 09:20:11.393 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613260/product_19349654.html
+2019-11-15 09:20:11.764 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st152061/product_10505460.html
+2019-11-15 09:20:11.765 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st588364/product_19335320.html
+2019-11-15 09:20:11.988 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610698/product_19207225.html
+2019-11-15 09:20:12.558 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st133462/product_17953299.html
+2019-11-15 09:20:13.371 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67441/product_19182175.html
+2019-11-15 09:20:14.089 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st594781/product_19018410.html
+2019-11-15 09:20:14.104 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st148276/product_18292772.html
+2019-11-15 09:20:14.664 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604806/product_18740550.html
+2019-11-15 09:20:14.861 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605953/product_19035072.html
+2019-11-15 09:20:15.660 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st144619/product_9472141.html
+2019-11-15 09:20:15.805 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st591909/product_18630138.html
+2019-11-15 09:20:15.806 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st567468/product_18294270.html
+2019-11-15 09:20:15.828 [pool-1-thread-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
+2019-11-15 09:20:15.828 [pool-1-thread-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'product_model' at row 1
+2019-11-15 09:20:15.838 [pool-1-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='http://www.hbzhan.com/st567468/product_18294270.html', method='null', extras=null, priority=0, headers={}, cookies={}} error
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:300)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:253)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.saveAndFlush(Unknown Source)
+	at com.gaolei.crawler.service.impl.HbProductServiceImpl.addHbProduct(HbProductServiceImpl.java:24)
+	at com.gaolei.crawler.pipeline.HbProductPipeline.process(HbProductPipeline.java:26)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3174)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3688)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:90)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:356)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1453)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1439)
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:308)
+	at com.sun.proxy.$Proxy76.flush(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.flush(SimpleJpaRepository.java:533)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAndFlush(SimpleJpaRepository.java:504)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor$$Lambda$689/518192826.get(Unknown Source)
+	at org.springframework.data.repository.util.QueryExecutionConverters$$Lambda$688/150441727.apply(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$$Lambda$686/361479958.proceedWithInvocation(Unknown Source)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 19 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'product_model' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:970)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1109)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1057)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1377)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1042)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:256)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175)
+	... 55 common frames omitted
+2019-11-15 09:20:16.600 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67687/product_18526846.html
+2019-11-15 09:20:17.484 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575275/product_18397364.html
+2019-11-15 09:20:17.573 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st141890/product_18258042.html
+2019-11-15 09:20:18.468 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st125879/product_18243693.html
+2019-11-15 09:20:18.536 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st108485/product_18142656.html
+2019-11-15 09:20:19.346 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st593462/product_18172234.html
+2019-11-15 09:20:19.725 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st149644/product_18181576.html
+2019-11-15 09:20:20.622 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st9635/product_2601321.html
+2019-11-15 09:20:21.169 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st150259/product_17968012.html
+2019-11-15 09:20:21.936 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st158635/product_17928730.html
+2019-11-15 09:20:22.394 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st73343/product_10425650.html
+2019-11-15 09:20:22.603 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st155758/product_17905684.html
+2019-11-15 09:20:23.045 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st568468/product_17726565.html
+2019-11-15 09:20:23.141 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st14033/product_18824000.html
+2019-11-15 09:20:23.737 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7730_p2.html
+2019-11-15 09:20:23.882 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st36161/product_9966731.html
+2019-11-15 09:20:24.020 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st127678/product_8708009.html
+2019-11-15 09:20:25.071 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st553497/product_19715290.html
+2019-11-15 09:20:25.153 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st30724/product_775553.html
+2019-11-15 09:20:25.251 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st617485/product_19716094.html
+2019-11-15 09:20:25.320 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st537718/product_17565700.html
+2019-11-15 09:20:25.528 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st602635/product_19713526.html
+2019-11-15 09:20:26.097 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st15225/product_19709010.html
+2019-11-15 09:20:26.237 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599276/product_19712784.html
+2019-11-15 09:20:27.537 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st160692/product_19441854.html
+2019-11-15 09:20:27.643 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st577953/product_19711446.html
+2019-11-15 09:20:27.884 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609279/product_19711087.html
+2019-11-15 09:20:28.768 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st50310/product_19702263.html
+2019-11-15 09:20:28.831 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st593324/product_18092451.html
+2019-11-15 09:20:29.764 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st89460/product_19698876.html
+2019-11-15 09:20:30.134 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st594445/product_18255148.html
+2019-11-15 09:20:30.162 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615778/product_19701099.html
+2019-11-15 09:20:30.213 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st588296/product_19689127.html
+2019-11-15 09:20:31.049 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610014/product_19416454.html
+2019-11-15 09:20:31.465 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st8073/product_19688988.html
+2019-11-15 09:20:31.669 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st616465/product_19685648.html
+2019-11-15 09:20:32.337 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st596160/product_19672559.html
+2019-11-15 09:20:32.588 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st3713/product_19448608.html
+2019-11-15 09:20:32.732 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st582344/product_19663767.html
+2019-11-15 09:20:33.552 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st154853/product_19638501.html
+2019-11-15 09:20:33.953 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_19661901.html
+2019-11-15 09:20:33.989 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67687/product_18728667.html
+2019-11-15 09:20:35.201 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st553913/product_16894612.html
+2019-11-15 09:20:35.521 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st39598/product_19637451.html
+2019-11-15 09:20:35.808 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st55904/product_19635820.html
+2019-11-15 09:20:35.852 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575604/product_19620050.html
+2019-11-15 09:20:36.531 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st573991/product_19616312.html
+2019-11-15 09:20:36.897 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603169/product_19593717.html
+2019-11-15 09:20:37.108 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599023/product_19536311.html
+2019-11-15 09:20:37.320 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st590989/product_19587157.html
+2019-11-15 09:20:37.708 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575602/product_18224891.html
+2019-11-15 09:20:38.446 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st543823/product_19577922.html
+2019-11-15 09:20:38.649 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614962/product_19550569.html
+2019-11-15 09:20:38.916 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st570052/product_19555339.html
+2019-11-15 09:20:38.921 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st611291/product_19548720.html
+2019-11-15 09:20:39.430 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st57080/product_18640169.html
+2019-11-15 09:20:40.317 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st153010/product_19545966.html
+2019-11-15 09:20:40.595 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st572843/product_19422766.html
+2019-11-15 09:20:40.659 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614762/product_19548770.html
+2019-11-15 09:20:40.814 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st576327/product_19542803.html
+2019-11-15 09:20:41.063 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609022/product_19076760.html
+2019-11-15 09:20:41.937 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st141291/product_19532861.html
+2019-11-15 09:20:42.078 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st34280/product_19533306.html
+2019-11-15 09:20:42.541 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st129585/product_9051034.html
+2019-11-15 09:20:42.789 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st606089/product_19508523.html
+2019-11-15 09:20:42.887 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st582592/product_19532509.html
+2019-11-15 09:20:43.713 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st162322/product_19488746.html
+2019-11-15 09:20:43.806 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st607307/product_19489994.html
+2019-11-15 09:20:44.255 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610698/product_19483588.html
+2019-11-15 09:20:44.338 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18915704.html
+2019-11-15 09:20:44.424 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18908232.html
+2019-11-15 09:20:44.933 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18904370.html
+2019-11-15 09:20:45.211 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18900390.html
+2019-11-15 09:20:45.474 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18900046.html
+2019-11-15 09:20:45.628 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18899893.html
+2019-11-15 09:20:45.707 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7710_p2.html
+2019-11-15 09:20:45.731 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604853/product_18885427.html
+2019-11-15 09:20:46.724 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st557768/product_18610466.html
+2019-11-15 09:20:47.495 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581854/product_19716524.html
+2019-11-15 09:20:47.646 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615599/product_19715040.html
+2019-11-15 09:20:47.765 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st619460/product_19717012.html
+2019-11-15 09:20:48.111 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605295/product_19558092.html
+2019-11-15 09:20:48.862 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584868/product_19711364.html
+2019-11-15 09:20:49.095 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st539264/product_19711044.html
+2019-11-15 09:20:49.484 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st616416/product_19709108.html
+2019-11-15 09:20:50.035 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st569265/product_19710267.html
+2019-11-15 09:20:50.789 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st592527/product_19706151.html
+2019-11-15 09:20:51.164 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st607392/product_19631297.html
+2019-11-15 09:20:51.200 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st50310/product_19702679.html
+2019-11-15 09:20:52.552 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st117064/product_19693719.html
+2019-11-15 09:20:52.622 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st158635/product_19686504.html
+2019-11-15 09:20:52.875 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st127464/product_19148727.html
+2019-11-15 09:20:53.642 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613906/product_19651399.html
+2019-11-15 09:20:53.917 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614762/product_19673352.html
+2019-11-15 09:20:54.892 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599023/product_18780749.html
+2019-11-15 09:20:56.327 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581776/product_19644687.html
+2019-11-15 09:20:56.850 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st564933/product_19641252.html
+2019-11-15 09:20:57.828 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st559468/product_15132785.html
+2019-11-15 09:20:58.323 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st94848/product_19656321.html
+2019-11-15 09:20:58.820 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599276/product_19637646.html
+2019-11-15 09:20:59.207 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st619461/product_19716011.html
+2019-11-15 09:20:59.250 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st577953/product_19709438.html
+2019-11-15 09:20:59.389 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st617798/product_19618418.html
+2019-11-15 09:21:00.009 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st612429/product_19610336.html
+2019-11-15 09:21:01.073 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st120253/product_19606226.html
+2019-11-15 09:21:01.196 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st73343/product_14502284.html
+2019-11-15 09:21:01.356 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603169/product_19593732.html
+2019-11-15 09:21:01.579 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st560408/product_19608616.html
+2019-11-15 09:21:02.758 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st1266/product_19584990.html
+2019-11-15 09:21:02.868 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st558412/product_19590479.html
+2019-11-15 09:21:03.164 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st14224/product_8997970.html
+2019-11-15 09:21:03.266 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st97223/product_7247287.html
+2019-11-15 09:21:03.620 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st612442/product_19584437.html
+2019-11-15 09:21:04.590 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st585968/product_19581283.html
+2019-11-15 09:21:04.932 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st590989/product_19562490.html
+2019-11-15 09:21:05.052 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614938/product_19583446.html
+2019-11-15 09:21:05.260 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st102771/product_19583726.html
+2019-11-15 09:21:05.600 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614352/product_19556389.html
+2019-11-15 09:21:06.187 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st76939/product_3683712.html
+2019-11-15 09:21:06.381 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67277/product_18512028.html
+2019-11-15 09:21:06.431 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st88004/product_19555013.html
+2019-11-15 09:21:06.796 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609023/product_19331296.html
+2019-11-15 09:21:07.195 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st153010/product_19546024.html
+2019-11-15 09:21:07.538 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st611291/product_19267152.html
+2019-11-15 09:21:07.784 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609022/product_19085246.html
+2019-11-15 09:21:08.036 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614489/product_19540019.html
+2019-11-15 09:21:08.160 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7720_p2.html
+2019-11-15 09:21:08.513 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613631/product_19381164.html
+2019-11-15 09:21:08.744 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st111233/product_19523340.html
+2019-11-15 09:21:08.968 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st89460/product_19714755.html
+2019-11-15 09:21:09.145 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599276/product_19717175.html
+2019-11-15 09:21:09.408 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st15225/product_19716937.html
+2019-11-15 09:21:10.052 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597793/product_19716450.html
+2019-11-15 09:21:10.121 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st612596/product_19716841.html
+2019-11-15 09:21:10.578 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st571112/product_19716313.html
+2019-11-15 09:21:11.147 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st543733/product_19716279.html
+2019-11-15 09:21:11.147 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584589/product_19716371.html
+2019-11-15 09:21:11.379 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st115950/product_19715640.html
+2019-11-15 09:21:12.168 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st553497/product_19715612.html
+2019-11-15 09:21:12.201 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575604/product_19715428.html
+2019-11-15 09:21:12.755 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st577953/product_19715341.html
+2019-11-15 09:21:13.044 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st50310/product_19714777.html
+2019-11-15 09:21:13.045 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st607998/product_19715275.html
+2019-11-15 09:21:13.446 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605295/product_19562122.html
+2019-11-15 09:21:14.066 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613911/product_19714738.html
+2019-11-15 09:21:14.653 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st619328/product_19717173.html
+2019-11-15 09:21:14.740 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st588434/product_19717041.html
+2019-11-15 09:21:15.080 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614366/product_19717077.html
+2019-11-15 09:21:15.234 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605298/product_19717048.html
+2019-11-15 09:21:15.683 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610627/product_19717037.html
+2019-11-15 09:21:16.319 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604110/product_19716589.html
+2019-11-15 09:21:16.477 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st616209/product_19716685.html
+2019-11-15 09:21:16.480 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st592144/product_19716485.html
+2019-11-15 09:21:16.836 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st619461/product_19716541.html
+2019-11-15 09:21:17.286 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st619460/product_19716456.html
+2019-11-15 09:21:17.659 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st598327/product_19716317.html
+2019-11-15 09:21:17.894 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613747/product_19716031.html
+2019-11-15 09:21:18.058 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587388/product_19716102.html
+2019-11-15 09:21:18.329 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st576327/product_19715989.html
+2019-11-15 09:21:18.569 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st3605/product_19715875.html
+2019-11-15 09:21:18.980 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st611492/product_19715158.html
+2019-11-15 09:21:19.337 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604105/product_19715254.html
+2019-11-15 09:21:19.529 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610549/product_19714704.html
+2019-11-15 09:21:19.780 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599479/product_19714710.html
+2019-11-15 09:21:19.852 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st617882/product_19714545.html
+2019-11-15 09:21:20.124 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614412/product_19714413.html
+2019-11-15 09:21:20.561 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603972/product_19713710.html
+2019-11-15 09:21:20.841 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st154853/product_19712986.html
+2019-11-15 09:21:21.040 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581027/product_19402121.html
+2019-11-15 09:21:21.311 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597610/product_19713581.html
+2019-11-15 09:21:21.601 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st553087/product_19700765.html
+2019-11-15 09:21:21.767 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st545827/product_19709156.html
+2019-11-15 09:21:22.188 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st39598/product_19637924.html
+2019-11-15 09:21:22.435 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67687/product_19709376.html
+2019-11-15 09:21:22.557 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597919/product_18418796.html
+2019-11-15 09:21:22.961 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st46116/product_19533162.html
+2019-11-15 09:21:23.057 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600696/product_19699490.html
+2019-11-15 09:21:23.941 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67687/product_19719349.html
+2019-11-15 09:21:23.948 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st556585/product_15634953.html
+2019-11-15 09:21:23.985 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67687/product_19633890.html
+2019-11-15 09:21:24.305 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67687/product_19689330.html
+2019-11-15 09:21:24.320 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581644/product_19710911.html
+2019-11-15 09:21:24.759 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st89460/product_19620038.html
+2019-11-15 09:21:24.872 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st89460/product_19619903.html
+2019-11-15 09:21:25.000 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st571112/product_19606612.html
+2019-11-15 09:21:25.197 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7692_p2.html
+2019-11-15 09:21:25.418 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st571112/product_19606541.html
+2019-11-15 09:21:25.492 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st571112/product_19606472.html
+2019-11-15 09:21:26.339 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st571112/product_19606258.html
+2019-11-15 09:21:26.652 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597610/product_19714390.html
+2019-11-15 09:21:26.698 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st84260/product_19686011.html
+2019-11-15 09:21:26.729 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st556063/product_16769140.html
+2019-11-15 09:21:26.873 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st111233/product_19639406.html
+2019-11-15 09:21:27.810 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613631/product_19558058.html
+2019-11-15 09:21:27.943 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st611291/product_19554501.html
+2019-11-15 09:21:27.957 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st588296/product_19559106.html
+2019-11-15 09:21:27.973 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609023/product_19473249.html
+2019-11-15 09:21:28.048 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603169/product_19581248.html
+2019-11-15 09:21:28.938 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st590989/product_19555954.html
+2019-11-15 09:21:29.094 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st585968/product_19511919.html
+2019-11-15 09:21:29.473 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614762/product_19549031.html
+2019-11-15 09:21:29.592 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584721/product_19453806.html
+2019-11-15 09:21:29.668 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584822/product_19531947.html
+2019-11-15 09:21:30.043 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st34693/product_19412900.html
+2019-11-15 09:21:30.125 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67441/product_19406856.html
+2019-11-15 09:21:30.458 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st607307/product_19345719.html
+2019-11-15 09:21:30.843 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st88004/product_19377810.html
+2019-11-15 09:21:30.925 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604709/product_18938117.html
+2019-11-15 09:21:31.323 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st569265/product_19059273.html
+2019-11-15 09:21:31.410 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613260/product_19352741.html
+2019-11-15 09:21:31.513 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st144619/product_17731636.html
+2019-11-15 09:21:32.044 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st568958/product_16216166.html
+2019-11-15 09:21:32.071 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st89203/product_4112086.html
+2019-11-15 09:21:32.194 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st148276/product_18329600.html
+2019-11-15 09:21:32.756 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597907/product_18852564.html
+2019-11-15 09:21:32.802 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599139/product_18659300.html
+2019-11-15 09:21:33.944 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st567826/product_18627584.html
+2019-11-15 09:21:33.952 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st15225/product_18596159.html
+2019-11-15 09:21:34.047 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st562710/product_18593222.html
+2019-11-15 09:21:34.058 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600646/product_18659172.html
+2019-11-15 09:21:34.082 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597844/product_18605580.html
+2019-11-15 09:21:34.690 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575275/product_18397113.html
+2019-11-15 09:21:35.142 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st576517/product_18319202.html
+2019-11-15 09:21:35.155 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581854/product_18360008.html
+2019-11-15 09:21:35.250 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st595413/product_18320344.html
+2019-11-15 09:21:35.620 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st156382/product_16738985.html
+2019-11-15 09:21:35.922 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st578543/product_18171989.html
+2019-11-15 09:21:36.338 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st152801/product_18107262.html
+2019-11-15 09:21:36.390 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st23589/product_812747.html
+2019-11-15 09:21:36.611 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st155758/product_11090371.html
+2019-11-15 09:21:36.732 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st638/product_15305518.html
+2019-11-15 09:21:37.089 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st152061/product_10594077.html
+2019-11-15 09:21:37.653 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st127678/product_9106798.html
+2019-11-15 09:21:37.749 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st73343/product_17714008.html
+2019-11-15 09:21:37.845 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st145198/product_17689224.html
+2019-11-15 09:21:38.205 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st45624/product_10594399.html
+2019-11-15 09:21:38.507 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7738_p2.html
+2019-11-15 09:21:38.881 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st74703/product_9689828.html
+2019-11-15 09:21:39.416 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st50429/product_19715007.html
+2019-11-15 09:21:39.416 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67804/product_2250271.html
+2019-11-15 09:21:39.603 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st577476/product_17152903.html
+2019-11-15 09:21:39.965 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575275/product_19714663.html
+2019-11-15 09:21:40.305 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st543733/product_19715767.html
+2019-11-15 09:21:40.954 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st50310/product_19711649.html
+2019-11-15 09:21:41.054 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st619461/product_19716394.html
+2019-11-15 09:21:41.085 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603169/product_19704740.html
+2019-11-15 09:21:41.419 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st569265/product_19696652.html
+2019-11-15 09:21:42.050 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597610/product_19695067.html
+2019-11-15 09:21:42.410 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st158635/product_19686377.html
+2019-11-15 09:21:42.586 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st596160/product_19671670.html
+2019-11-15 09:21:42.892 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st569522/product_19660848.html
+2019-11-15 09:21:42.988 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581854/product_19661525.html
+2019-11-15 09:21:43.474 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67441/product_19650680.html
+2019-11-15 09:21:43.808 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st89460/product_19645514.html
+2019-11-15 09:21:43.929 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587362/product_19645356.html
+2019-11-15 09:21:44.273 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st568958/product_18023139.html
+2019-11-15 09:21:44.365 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587608/product_19646363.html
+2019-11-15 09:21:44.745 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584721/product_19005418.html
+2019-11-15 09:21:45.045 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st585968/product_19624623.html
+2019-11-15 09:21:45.643 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st551876/product_19621236.html
+2019-11-15 09:21:45.849 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st123689/product_19603632.html
+2019-11-15 09:21:46.120 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st575064/product_19601917.html
+2019-11-15 09:21:46.122 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st588770/product_19605456.html
+2019-11-15 09:21:46.637 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st599443/product_19598773.html
+2019-11-15 09:21:46.976 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615778/product_19592611.html
+2019-11-15 09:21:47.077 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st1266/product_19584441.html
+2019-11-15 09:21:47.272 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st590989/product_19588562.html
+2019-11-15 09:21:47.906 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st130359/product_19561502.html
+2019-11-15 09:21:47.963 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st94848/product_19626438.html
+2019-11-15 09:21:48.304 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st93685/product_19558392.html
+2019-11-15 09:21:48.350 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st536724/product_19551215.html
+2019-11-15 09:21:48.773 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613613/product_19558691.html
+2019-11-15 09:21:48.853 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st576327/product_19542120.html
+2019-11-15 09:21:48.933 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st73343/product_2993476.html
+2019-11-15 09:21:49.374 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st614762/product_19517354.html
+2019-11-15 09:21:49.382 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609022/product_19050349.html
+2019-11-15 09:21:49.987 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st125879/product_19509653.html
+2019-11-15 09:21:50.033 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609023/product_19121680.html
+2019-11-15 09:21:50.496 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st606331/product_19432652.html
+2019-11-15 09:21:50.587 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st1291/product_9757053.html
+2019-11-15 09:21:50.870 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st51506/product_19435932.html
+2019-11-15 09:21:51.407 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st148276/product_19427403.html
+2019-11-15 09:21:51.615 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st581574/product_19449330.html
+2019-11-15 09:21:51.760 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st25332/product_19411460.html
+2019-11-15 09:21:52.523 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st593149/product_19392158.html
+2019-11-15 09:21:52.597 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st604709/product_18935402.html
+2019-11-15 09:21:52.876 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st613260/product_19353089.html
+2019-11-15 09:21:53.450 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st610022/product_19346434.html
+2019-11-15 09:21:54.132 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st154988/product_19344483.html
+2019-11-15 09:21:54.155 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587608/product_19535795.html
+2019-11-15 09:21:54.171 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587608/product_19535698.html
+2019-11-15 09:21:54.637 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587608/product_19425917.html
+2019-11-15 09:21:55.106 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st568958/product_18560638.html
+2019-11-15 09:21:55.279 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st568958/product_18469995.html
+2019-11-15 09:21:55.602 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st587608/product_19425629.html
+2019-11-15 09:21:56.510 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600058/product_18433821.html
+2019-11-15 09:21:56.612 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600058/product_18433822.html
+2019-11-15 09:21:56.787 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600058/product_18433825.html
+2019-11-15 09:21:56.840 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600058/product_18433820.html
+2019-11-15 09:21:57.232 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7762_p2.html
+2019-11-15 09:21:57.836 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st558412/product_19603873.html
+2019-11-15 09:21:58.062 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694567.html
+2019-11-15 09:21:58.103 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605295/product_19695684.html
+2019-11-15 09:21:59.018 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st152061/product_10506595.html
+2019-11-15 09:21:59.019 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st576154/product_19353824.html
+2019-11-15 09:21:59.058 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st582541/product_19480351.html
+2019-11-15 09:21:59.333 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st606089/product_19093770.html
+2019-11-15 09:21:59.408 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st67277/product_18969653.html
+2019-11-15 09:21:59.997 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st3713/product_18715384.html
+2019-11-15 09:22:00.212 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st116813/product_7486213.html
+2019-11-15 09:22:00.643 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st96991/product_5405874.html
+2019-11-15 09:22:01.019 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st600557/product_18544863.html
+2019-11-15 09:22:01.065 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st64369/product_16056713.html
+2019-11-15 09:22:01.378 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st86841/product_14713955.html
+2019-11-15 09:22:01.818 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st62034/product_6066863.html
+2019-11-15 09:22:01.868 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st4080/product_13498915.html
+2019-11-15 09:22:02.030 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st158114/product_12575918.html
+2019-11-15 09:22:02.522 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st611351/product_19717066.html
+2019-11-15 09:22:02.692 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615516/product_19700838.html
+2019-11-15 09:22:02.877 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615516/product_19700379.html
+2019-11-15 09:22:02.935 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615516/product_19700486.html
+2019-11-15 09:22:02.968 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615516/product_19700718.html
+2019-11-15 09:22:03.570 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st615516/product_19700278.html
+2019-11-15 09:22:03.841 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605295/product_19695552.html
+2019-11-15 09:22:03.871 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st618870/product_19700166.html
+2019-11-15 09:22:03.886 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694566.html
+2019-11-15 09:22:04.233 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st605295/product_19695449.html
+2019-11-15 09:22:04.504 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694563.html
+2019-11-15 09:22:04.875 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694554.html
+2019-11-15 09:22:04.876 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694559.html
+2019-11-15 09:22:04.943 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694557.html
+2019-11-15 09:22:05.528 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694541.html
+2019-11-15 09:22:05.626 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694549.html
+2019-11-15 09:22:05.890 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694524.html
+2019-11-15 09:22:05.929 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694530.html
+2019-11-15 09:22:06.089 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694535.html
+2019-11-15 09:22:06.847 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694520.html
+2019-11-15 09:22:06.929 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694519.html
+2019-11-15 09:22:07.119 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694515.html
+2019-11-15 09:22:07.204 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694496.html
+2019-11-15 09:22:07.217 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694512.html
+2019-11-15 09:22:08.202 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694475.html
+2019-11-15 09:22:08.219 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694483.html
+2019-11-15 09:22:08.261 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694460.html
+2019-11-15 09:22:08.276 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694479.html
+2019-11-15 09:22:08.671 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694464.html
+2019-11-15 09:22:09.177 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694438.html
+2019-11-15 09:22:09.306 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694454.html
+2019-11-15 09:22:09.306 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694441.html
+2019-11-15 09:22:09.524 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694458.html
+2019-11-15 09:22:09.795 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/chanpin-7782_p2.html
+2019-11-15 09:22:10.039 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st608340/product_19694435.html
+2019-11-15 09:22:10.448 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st597100/product_19715971.html
+2019-11-15 09:22:10.892 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st618703/product_19716077.html
+2019-11-15 09:22:11.385 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st569522/product_19715667.html
+2019-11-15 09:22:11.605 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584822/product_19715285.html
+2019-11-15 09:22:11.718 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st543733/product_19714464.html
+2019-11-15 09:22:12.126 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st154417/product_19713669.html
+2019-11-15 09:22:12.159 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st133462/product_17970544.html
+2019-11-15 09:22:12.727 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st548272/product_19716180.html
+2019-11-15 09:22:12.923 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st584721/product_19291744.html
+2019-11-15 09:22:13.721 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st603169/product_19708872.html
+2019-11-15 09:22:14.059 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st612270/product_19469072.html
+2019-11-15 09:22:14.064 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st569265/product_19705873.html
+2019-11-15 09:22:14.070 [pool-1-thread-3] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st570844/product_19710670.html
+2019-11-15 09:22:14.076 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st609872/product_19711129.html
+2019-11-15 09:22:15.078 [pool-1-thread-4] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st158635/product_19686419.html
+2019-11-15 09:22:15.559 [pool-1-thread-5] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.hbzhan.com/st117064/product_19692533.html

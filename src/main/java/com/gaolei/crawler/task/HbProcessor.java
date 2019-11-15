@@ -194,12 +194,10 @@ public class HbProcessor implements PageProcessor {
             product.setProduct_price(price);
 
         //获取产品最小订货量
-        // todo(有时候获取不到)
         String minOrder = dataNode.xpath("//div[@class='price']//span[@class='jisuanProNum']/text()").toString();
         if (minOrder != null)
             product.setProduct_min_ordered(minOrder + "台");
 
-        //todo(有时候获取不到)
         List<Selectable> dataNods = dataNode.xpath("//div[@class='proDetail0']/ul/li").nodes();
         for (Selectable dataNod : dataNods) {
             String key = dataNod.xpath("//span/text()").toString();
@@ -272,28 +270,28 @@ public class HbProcessor implements PageProcessor {
     //也可以改成用网页来执行的,使用controller
     //@Scheduled(cron = "0 0 * * * ?")
     //测试使用,立马执行
-//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
-//    public void process() {
-//        logger.info("环保在线-商城产品列表任务开始执行...");
-//        String url = "http://www.hbzhan.com/product/newtype.html";
-//        Spider.create(new HbProcessor())
-//                .addUrl(url)//添加网址
-//                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
-//                .addPipeline(hbProductPipeline)//添加pipeline
-//                .thread(5)//设置多线程
-//                .run();//启动
-//    }
-
     @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
     public void process() {
         logger.info("环保在线-商城产品列表任务开始执行...");
-        String url = "http://www.hbzhan.com/chanpin-7692.html";
+        String url = "http://www.hbzhan.com/product/newtype.html";
         Spider.create(new HbProcessor())
                 .addUrl(url)//添加网址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
                 .addPipeline(hbProductPipeline)//添加pipeline
-                .thread(1)//设置多线程
+                .thread(5)//设置多线程
                 .run();//启动
     }
+
+//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
+//    public void process() {
+//        logger.info("环保在线-商城产品列表任务开始执行...");
+//        String url = "http://www.hbzhan.com/chanpin-7692.html";
+//        Spider.create(new HbProcessor())
+//                .addUrl(url)//添加网址
+//                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
+//                .addPipeline(hbProductPipeline)//添加pipeline
+//                .thread(1)//设置多线程
+//                .run();//启动
+//    }
 
 }
