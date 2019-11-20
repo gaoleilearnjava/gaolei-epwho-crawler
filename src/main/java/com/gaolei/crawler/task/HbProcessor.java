@@ -307,6 +307,11 @@ public class HbProcessor implements PageProcessor {
      * @param page
      */
     private void processProductDtlType2(Page page) {
+        int a = 15;
+        System.out.println("fuck");
+        if (a != 10) {
+            System.out.println();
+        }
         //todo 写一下具体逻辑
     }
 
@@ -334,6 +339,9 @@ public class HbProcessor implements PageProcessor {
                 .run();//启动
     }
 
+    public static void main(String[] args) {
+        System.out.println("天青色等烟雨,而我在等你");
+    }
 //    /**
 //     * 测试方法
 //     */

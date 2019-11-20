@@ -1,0 +1,177 @@
+2019-11-11 09:20:06.105 [main] INFO  com.gaolei.crawler.CrawlerApplication - Starting CrawlerApplication on GaoLei with PID 4228 (E:\JavaProgram\gaolei-epwho-crawler\target\classes started by Administrator in E:\JavaProgram\gaolei-epwho-crawler)
+2019-11-11 09:20:06.120 [main] INFO  com.gaolei.crawler.CrawlerApplication - No active profile set, falling back to default profiles: default
+2019-11-11 09:20:07.977 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:20:08.055 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 1 repository interfaces.
+2019-11-11 09:20:08.616 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b92bfdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:20:09.256 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-11-11 09:20:09.271 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-11-11 09:20:09.287 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-11 09:20:09.287 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-11-11 09:20:09.474 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-11 09:20:09.474 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3089 ms
+2019-11-11 09:20:10.005 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-11-11 09:20:10.317 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-11 09:20:10.519 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-11-11 09:20:10.519 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-11-11 09:20:10.863 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-11 09:20:11.206 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-11 09:20:12.126 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:20:12.672 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-11 09:20:13.405 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 09:20:13.468 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:20:13.702 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-11-11 09:20:13.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-11-11 09:20:13.795 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-11-11 09:20:13.795 [main] INFO  com.gaolei.crawler.CrawlerApplication - Started CrawlerApplication in 8.642 seconds (JVM running for 11.141)
+2019-11-11 09:20:14.763 [scheduling-1] INFO  com.gaolei.crawler.task.EpwhoProcessor - 第一环保网-商城产品列表任务开始执行...
+2019-11-11 09:20:14.856 [scheduling-1] INFO  us.codecraft.webmagic.Spider - Spider www.epwho.com started!
+2019-11-11 09:20:17.851 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_162.html
+2019-11-11 09:20:23.545 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55875.html
+2019-11-11 09:20:23.561 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55874.html
+2019-11-11 09:20:29.707 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sct889443/product-55873.html
+2019-11-11 09:20:29.707 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sct889443/product-55871.html
+2019-11-11 09:20:34.871 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_wljxywf123/product-55862.html
+2019-11-11 09:20:34.871 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sbk123/product-55859.html
+2019-11-11 09:20:40.020 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55855.html
+2019-11-11 09:20:40.051 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55854.html
+2019-11-11 09:20:45.152 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55853.html
+2019-11-11 09:20:45.199 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55847.html
+2019-11-11 09:20:50.285 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55846.html
+2019-11-11 09:20:50.316 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55845.html
+2019-11-11 09:20:55.386 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55844.html
+2019-11-11 09:20:55.433 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55843.html
+2019-11-11 09:21:00.518 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55842.html
+2019-11-11 09:21:00.534 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55841.html
+2019-11-11 09:21:05.666 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_liu149442/product-55840.html
+2019-11-11 09:21:05.682 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_liu149442/product-55839.html
+2019-11-11 09:21:10.767 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_liu149442/product-55838.html
+2019-11-11 09:21:10.799 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_liu149442/product-55837.html
+2019-11-11 09:21:17.937 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_163.html
+2019-11-11 09:21:23.176 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55836.html
+2019-11-11 09:21:23.207 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_guo585154/product-55830.html
+2019-11-11 09:21:28.293 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_guo585154/product-55829.html
+2019-11-11 09:21:28.340 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chu803649/product-55820.html
+2019-11-11 09:21:33.426 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_mei863958/product-55816.html
+2019-11-11 09:21:33.472 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sdchunrun/product-55814.html
+2019-11-11 09:21:38.527 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sdchunrun/product-55811.html
+2019-11-11 09:21:38.574 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sdchunrun/product-55810.html
+2019-11-11 09:21:43.659 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_jsx189395/product-55806.html
+2019-11-11 09:21:43.675 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_jsx189395/product-55805.html
+2019-11-11 09:21:48.760 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_jsx189395/product-55804.html
+2019-11-11 09:21:48.776 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sdchunrun/product-55803.html
+2019-11-11 09:21:53.877 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_jsx189395/product-55802.html
+2019-11-11 09:21:53.877 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55801.html
+2019-11-11 09:21:58.983 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55800.html
+2019-11-11 09:21:58.998 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55799.html
+2019-11-11 09:22:04.088 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55798.html
+2019-11-11 09:22:04.104 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55797.html
+2019-11-11 09:22:09.190 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55796.html
+2019-11-11 09:22:09.205 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55777.html
+2019-11-11 09:22:16.173 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_164.html
+2019-11-11 09:22:21.398 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55774.html
+2019-11-11 09:22:21.433 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_szsyxyqsbyxgs/product-55772.html
+2019-11-11 09:22:26.512 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55771.html
+2019-11-11 09:22:26.525 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55770.html
+2019-11-11 09:22:31.603 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55768.html
+2019-11-11 09:22:31.614 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55759.html
+2019-11-11 09:22:36.701 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55758.html
+2019-11-11 09:22:36.716 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55757.html
+2019-11-11 09:22:41.797 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_szsyxyqsbyxgs/product-55754.html
+2019-11-11 09:22:41.843 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_e88115515/product-55742.html
+2019-11-11 09:22:46.900 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_e88115515/product-55737.html
+2019-11-11 09:22:46.962 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zdl189579/product-55735.html
+2019-11-11 09:22:51.995 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zdl189579/product-55734.html
+2019-11-11 09:22:52.063 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55726.html
+2019-11-11 09:22:57.081 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_exp429333/product-55725.html
+2019-11-11 09:22:57.147 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55719.html
+2019-11-11 09:23:02.164 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55718.html
+2019-11-11 09:23:02.256 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_shc205903/product-55709.html
+2019-11-11 09:23:07.279 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_xuc765901/product-55702.html
+2019-11-11 09:23:07.340 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55701.html
+2019-11-11 09:23:14.154 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_165.html
+2019-11-11 09:23:19.313 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55700.html
+2019-11-11 09:23:19.339 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55699.html
+2019-11-11 09:23:24.396 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55698.html
+2019-11-11 09:23:24.430 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_szsyxyqsbyxgs/product-55697.html
+2019-11-11 09:23:29.483 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55696.html
+2019-11-11 09:23:29.519 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55695.html
+2019-11-11 09:23:34.595 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_crystalmore/product-55694.html
+2019-11-11 09:23:34.604 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_crystalmore/product-55693.html
+2019-11-11 09:23:39.693 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55692.html
+2019-11-11 09:23:39.694 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55672.html
+2019-11-11 09:23:44.785 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_xuc765901/product-55670.html
+2019-11-11 09:23:44.797 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_szsyxyqsbyxgs/product-55666.html
+2019-11-11 09:23:49.884 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55663.html
+2019-11-11 09:23:49.896 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55654.html
+2019-11-11 09:23:54.971 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55650.html
+2019-11-11 09:23:54.982 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55649.html
+2019-11-11 09:24:00.060 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55647.html
+2019-11-11 09:24:00.068 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55646.html
+2019-11-11 09:24:05.151 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55645.html
+2019-11-11 09:24:05.158 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_mei863958/product-55640.html
+2019-11-11 09:24:12.084 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_166.html
+2019-11-11 09:24:17.251 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55635.html
+2019-11-11 09:24:17.277 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_yon567323/product-55636.html
+2019-11-11 09:24:22.340 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55619.html
+2019-11-11 09:24:22.364 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55613.html
+2019-11-11 09:24:27.425 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55612.html
+2019-11-11 09:24:27.451 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_run799337/product-55611.html
+2019-11-11 09:24:32.515 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sct889443/product-55606.html
+2019-11-11 09:24:32.565 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_wuxikunpeng/product-55603.html
+2019-11-11 09:24:37.601 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_wuxikunpeng/product-55602.html
+2019-11-11 09:24:37.650 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_est162637/product-55595.html
+2019-11-11 09:24:42.687 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_est162637/product-55594.html
+2019-11-11 09:24:42.733 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_est162637/product-55593.html
+2019-11-11 09:24:47.773 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_est162637/product-55592.html
+2019-11-11 09:24:47.816 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_est162637/product-55591.html
+2019-11-11 09:24:52.856 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55589.html
+2019-11-11 09:24:52.902 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_szsyxyqsbyxgs/product-55588.html
+2019-11-11 09:24:57.945 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_yon567323/product-55586.html
+2019-11-11 09:24:57.985 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55585.html
+2019-11-11 09:25:03.028 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_lvg593001/product-55583.html
+2019-11-11 09:25:03.104 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fussen/product-55578.html
+2019-11-11 09:25:10.004 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_167.html
+2019-11-11 09:25:15.183 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55569.html
+2019-11-11 09:25:15.203 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_fzk710960/product-55568.html
+2019-11-11 09:25:20.298 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_shq275024/product-55567.html
+2019-11-11 09:25:20.324 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_shq275024/product-55566.html
+2019-11-11 09:25:25.384 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55565.html
+2019-11-11 09:25:25.405 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hef147474/product-55564.html
+2019-11-11 09:25:30.471 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_xuc765901/product-55563.html
+2019-11-11 09:25:30.499 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_xuc765901/product-55562.html
+2019-11-11 09:25:35.558 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_xuc765901/product-55561.html
+2019-11-11 09:25:35.610 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hua784061/product-55542.html
+2019-11-11 09:25:40.637 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zdl189579/product-55540.html
+2019-11-11 09:25:40.722 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zttd111/product-55515.html
+2019-11-11 09:25:45.732 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zttd111/product-55513.html
+2019-11-11 09:25:45.846 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zzhb06555/product-55507.html
+2019-11-11 09:25:50.837 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zzhb06555/product-55506.html
+2019-11-11 09:25:50.931 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zzhb06555/product-55505.html
+2019-11-11 09:25:55.938 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_zzhb06555/product-55504.html
+2019-11-11 09:25:56.032 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_jiangnanzhishua/product-55497.html
+2019-11-11 09:26:01.055 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_yqw111/product-55488.html
+2019-11-11 09:26:01.133 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_szh999/product-55486.html
+2019-11-11 09:26:07.997 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_168.html
+2019-11-11 09:26:13.192 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55442.html
+2019-11-11 09:26:13.192 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55441.html
+2019-11-11 09:26:18.293 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55440.html
+2019-11-11 09:26:18.309 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55439.html
+2019-11-11 09:26:23.394 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55393.html
+2019-11-11 09:26:23.410 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55392.html
+2019-11-11 09:26:28.496 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55391.html
+2019-11-11 09:26:28.511 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_chdchx/product-55390.html
+2019-11-11 09:26:33.612 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_bodalvye/product-55389.html
+2019-11-11 09:26:33.644 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_bjfzhnkj/product-55380.html
+2019-11-11 09:26:38.729 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sdjysw/product-55379.html
+2019-11-11 09:26:38.745 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_bjfzhnkj/product-55378.html
+2019-11-11 09:26:43.846 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_iuwy5830/product-55355.html
+2019-11-11 09:26:43.877 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hu15028757102/product-55348.html
+2019-11-11 09:26:48.947 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_iuwy5830/product-55339.html
+2019-11-11 09:26:48.979 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_iuwy5830/product-55300.html
+2019-11-11 09:26:54.064 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_hl3151/product-55284.html
+2019-11-11 09:26:54.080 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_sdjysw/product-55270.html
+2019-11-11 09:26:59.181 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_xuc765901/product-55265.html
+2019-11-11 09:26:59.197 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/c_shanxirt/product-55269.html
+2019-11-11 09:27:06.123 [pool-1-thread-2] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success http://www.epwho.com/sell/index_169.html

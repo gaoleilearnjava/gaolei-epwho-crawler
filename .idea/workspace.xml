@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad75f650-b048-4c80-93af-975b997cc219" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/log/crawler/edps_data_crawler.2019-11-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/crawler/edps_data_crawler.2019-11-15.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gaolei/crawler/task/HbProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gaolei/crawler/task/HbProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="190" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/gaolei/crawler/dao/ProductDao.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="C:\Maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TEL5WSjF6jBune14xI2mFzJO6V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gaolei.crawler.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaProgram\gaolei-epwho-crawler\src\main\java\com\gaolei\crawler" />
+      <recent name="E:\JavaProgram\gaolei-epwho-crawler\src\main\java\com\gaolei\crawler\util" />
+      <recent name="E:\JavaProgram\gaolei-epwho-crawler\src\main\resources" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HbProcessor">
+    <configuration name="EpwhoProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gaolei.crawler.task.EpwhoProcessor" />
+      <module name="gaolei-epwho-crawler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gaolei.crawler.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HbProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gaolei.crawler.task.HbProcessor" />
+      <module name="gaolei-epwho-crawler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gaolei.crawler.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrawlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gaolei-epwho-crawler" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gaolei.crawler.CrawlerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HbProcessor" />
+        <item itemvalue="Application.EpwhoProcessor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad75f650-b048-4c80-93af-975b997cc219" name="默认更改列表" comment="" />
+      <created>1573020124462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573020124462</updated>
+      <workItem from="1573020126278" duration="8566000" />
+      <workItem from="1573029702011" duration="8946000" />
+      <workItem from="1573088625597" duration="14709000" />
+      <workItem from="1573110610568" duration="4080000" />
+      <workItem from="1573114725806" duration="1521000" />
+      <workItem from="1573116309331" duration="1166000" />
+      <workItem from="1573117546343" duration="12403000" />
+      <workItem from="1573175825504" duration="4181000" />
+      <workItem from="1573181610728" duration="3642000" />
+      <workItem from="1573188331569" duration="10440000" />
+      <workItem from="1573202050351" duration="113000" />
+      <workItem from="1573365014288" duration="2938000" />
+      <workItem from="1573434873337" duration="876000" />
+      <workItem from="1573538530038" duration="19000" />
+      <workItem from="1573607986524" duration="179000" />
+      <workItem from="1573608716800" duration="5465000" />
+      <workItem from="1573615933307" duration="15935000" />
+      <workItem from="1573693512921" duration="25867000" />
+      <workItem from="1573779894611" duration="2557000" />
+      <workItem from="1573796639194" duration="6601000" />
+      <workItem from="1573804673109" duration="959000" />
+      <workItem from="1573805847110" duration="173000" />
+      <workItem from="1574072855799" duration="790000" />
+      <workItem from="1574073741472" duration="74000" />
+    </task>
+    <task id="LOCAL-00001" summary="第一次提交,初代版本">
+      <created>1573182108300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573182108300</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改过产品详情的爬取逻辑">
+      <created>1573192020689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573192020689</updated>
+    </task>
+    <task id="LOCAL-00003" summary="产品成熟版本">
+      <created>1573435130241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573435130241</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加了对环保在线的爬取初步框架">
+      <created>1573623186582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573623186582</updated>
+    </task>
+    <task id="LOCAL-00005" summary="初步完成对环保在线网站的逻辑编写">
+      <created>1573628641219</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573628641219</updated>
+    </task>
+    <task id="LOCAL-00006" summary="初步正确版本,列表页,详情页的爬取没有任何问题">
+      <created>1573726339493</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573726339494</updated>
+    </task>
+    <task id="LOCAL-00007" summary="正确版本第一版,种类列表,列表页,详情页的爬取没有任何问题,可以执行.">
+      <created>1573780983307</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573780983307</updated>
+    </task>
+    <task id="LOCAL-00008" summary="正确版本第二版,种类列表,列表页,详情页的爬取没有任何问题,可以执行.">
+      <created>1573803100865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573803100866</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="第一次提交,初代版本" />
+    <MESSAGE value="修改过产品详情的爬取逻辑" />
+    <MESSAGE value="产品成熟版本" />
+    <MESSAGE value="增加了对环保在线的爬取初步框架" />
+    <MESSAGE value="初步完成对环保在线网站的逻辑编写" />
+    <MESSAGE value="初步正确版本,列表页,详情页的爬取没有任何问题" />
+    <MESSAGE value="正确版本第一版,种类列表,列表页,详情页的爬取没有任何问题,可以执行." />
+    <MESSAGE value="正确版本第二版,种类列表,列表页,详情页的爬取没有任何问题,可以执行." />
+    <option name="LAST_COMMIT_MESSAGE" value="正确版本第二版,种类列表,列表页,详情页的爬取没有任何问题,可以执行." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gaolei_epwho_crawler$CrawlerApplication.ic" NAME="CrawlerApplication Coverage Results" MODIFIED="1573129877999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
