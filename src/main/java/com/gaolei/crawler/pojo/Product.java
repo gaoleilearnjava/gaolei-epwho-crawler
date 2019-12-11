@@ -17,34 +17,6 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
-    /*CREATE TABLE `store_epwho_product` (
-  `product_id` varchar(32) NOT NULL COMMENT '主键ID',
-  `product_name` varchar(100) DEFAULT NULL COMMENT '商品名称',
-   `product_pic` varchar(200) DEFAULT NULL COMMENT '商品图片',
-  `product_type` varchar(50) DEFAULT NULL COMMENT '商品类型',
-  `product_company` varchar(100) DEFAULT NULL COMMENT '所属企业',
-  `product_profile` text COMMENT '商品简介',
-  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
-  `product_status` int(11) DEFAULT NULL COMMENT '产品状态：0-在售;1-下架',
-  `product_dtl_url` varchar(100) DEFAULT NULL COMMENT '产品详情连接',
-  `product_dtl_status` int(11) DEFAULT NULL COMMENT '详情状态：0-未爬取;1-已爬取',
-  `product_brand` varchar(100) DEFAULT NULL COMMENT '品牌',
-  `product_detail` longtext COMMENT '详情',
-  `product_price` varchar(255) DEFAULT NULL COMMENT '单价',
-  `product_min_ordered` varchar(50) DEFAULT NULL COMMENT '最小起订量',
-  `product_supply` varchar(50) DEFAULT NULL COMMENT '供货总量',
-  `product_send_term` varchar(100) DEFAULT NULL COMMENT '发货期限',
-  `product_valid_term` varchar(100) DEFAULT NULL COMMENT '有效期至',
-  `update_user` varchar(32) DEFAULT NULL COMMENT '变更人',
-  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
-  `product_source` int(11) DEFAULT NULL COMMENT '产品来源：0-第一环保网；1-环保网；2-中国网库',
-  `product_img` varchar(32) DEFAULT NULL COMMENT '产品本地图片',
-  `product_deal_status` int(11) DEFAULT NULL COMMENT '处理状态：0-未同步；1-已同步',
-  `product_item` varchar(32) DEFAULT NULL COMMENT '产品分类',
-  `company_id` varchar(32) DEFAULT NULL COMMENT '企业ID',
-  PRIMARY KEY (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4*/
-
     @Id
     //产品ID(这个用UUID生成)
     private String product_id;
