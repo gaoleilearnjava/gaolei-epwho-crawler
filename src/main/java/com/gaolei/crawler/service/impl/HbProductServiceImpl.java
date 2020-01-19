@@ -40,4 +40,9 @@ public class HbProductServiceImpl implements HbProductService {
         List<HbProduct> result = hbProductDao.findAll(example);
         return result;
     }
+
+    public List<HbProduct> findAllHbProducts() {
+        List<HbProduct> hbProductList = hbProductDao.findAll();
+        return hbProductList;
+    }
 }

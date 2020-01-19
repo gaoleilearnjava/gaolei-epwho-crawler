@@ -1,3 +1,4 @@
+com\gaolei\crawler\util\TimeUtils.class
 com\gaolei\crawler\dao\HbProductDao.class
 com\gaolei\crawler\task\EpwhoProcessor.class
 com\gaolei\crawler\pojo\HbProduct.class

@@ -5,6 +5,7 @@ import com.gaolei.crawler.pojo.HbProduct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
@@ -311,7 +312,6 @@ public class HbProcessor implements PageProcessor {
         if (a != 10) {
             System.out.println();
         }
-        //todo 写一下具体逻辑
     }
 
 
@@ -325,8 +325,8 @@ public class HbProcessor implements PageProcessor {
      * 正式任务执行方法
      */
     //定时任务,开始爬虫,每小时执行一次
-//    @Scheduled(cron = "0 0 * * * ?")
-//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
+    @Scheduled(cron = "0 0 * * * ?")
+    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
     public void process() {
         logger.info("环保在线-商城产品列表任务开始执行...");
         String url = "http://www.hbzhan.com/product/newtype.html";
@@ -341,19 +341,5 @@ public class HbProcessor implements PageProcessor {
     public static void main(String[] args) {
         System.out.println("天青色等烟雨,而我在等你");
     }
-//    /**
-//     * 测试方法
-//     */
-//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
-//    public void process() {
-//        logger.info("环保在线-商城产品列表任务开始执行...");
-//        String url = "http://www.hbzhan.com/chanpin-9077.html";
-//        Spider.create(new HbProcessor())
-//                .addUrl(url)//添加网址
-//                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
-//                .addPipeline(hbProductPipeline)//添加pipeline
-//                .thread(1)//设置多线程
-//                .run();//启动
-//    }
 
 }
