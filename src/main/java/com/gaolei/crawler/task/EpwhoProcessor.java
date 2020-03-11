@@ -92,7 +92,7 @@ public class EpwhoProcessor implements PageProcessor {
         product.setProduct_pic(proPic);
         //设置产品创建时间
         Date date = new Date(System.currentTimeMillis());
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String time = dateFormat.format(date);
         product.setCreate_time(time);
         // 获取产品名称

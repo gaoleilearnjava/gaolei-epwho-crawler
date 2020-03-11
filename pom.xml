@@ -77,6 +77,12 @@
             <version>1.18.10</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.csource.common</groupId>
+            <artifactId>fastdfs</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
     </dependencies>
 
     <!--在添加了该插件之后，当运行“mvn package”进行打包时，会打包成一个可以直接运行的JAR文件，
