@@ -5,15 +5,11 @@ import com.gaolei.crawler.pojo.Policy;
 import com.gaolei.crawler.util.DownloadAndUploadUtils;
 import com.gaolei.crawler.util.UuidUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Base64Utils;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
-import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
-import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Selectable;
 
 import java.util.ArrayList;
@@ -218,20 +214,20 @@ public class PolicyProcessor implements PageProcessor {
         return this.site;
     }
 
-    /**
-     * 正式任务执行方法
-     */
-    //定时任务,开始爬虫,每小时执行一次
-    @Scheduled(cron = "0 0 * * * ?")
-    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
-    public void process() {
-        Spider.create(new PolicyProcessor())
-                .addUrl("http://www.mee.gov.cn/ywgz/fgbz/sthjshpczd/")//添加网址
-                .addUrl("http://www.mee.gov.cn/ywgz/fgbz/sthjshpczd/index_1.shtml")
-                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
-                .addPipeline(policyPipeline)//添加pipeline
-                .thread(1)//设置多线程
-                .run();//启动
-    }
+//    /**
+//     * 正式任务执行方法
+//     */
+//    //定时任务,开始爬虫,每小时执行一次
+//    @Scheduled(cron = "0 0 * * * ?")
+//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
+//    public void process() {
+//        Spider.create(new PolicyProcessor())
+//                .addUrl("http://www.mee.gov.cn/ywgz/fgbz/sthjshpczd/")//添加网址
+//                .addUrl("http://www.mee.gov.cn/ywgz/fgbz/sthjshpczd/index_1.shtml")
+//                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
+//                .addPipeline(policyPipeline)//添加pipeline
+//                .thread(1)//设置多线程
+//                .run();//启动
+//    }
 
 }
