@@ -49,23 +49,62 @@ public class ItemProcessor implements PageProcessor {
         List<Selectable> firstItems = page.getHtml().xpath("//div[@class='evli_body_top']").nodes();
         List<Selectable> secondItems = page.getHtml().xpath("//div[@class='evli_pro_list1']").nodes();
 
-        //把一二三级分类都插入到条目表里面，
-        //先爬取一级条目，获取到一级条目的所有二级条目。
-        //然后获取二级条目下的所有三级条目。
-        //单独把三级分类插入到标签表里面
+        for (int i = 0; i < firstItems.size(); i++) {
+            Selectable firstItemInfo = firstItems.get(i);
+            Selectable secondItemInfo = secondItems.get(i);
+            //准备一级条目
+            StoreGoodsItem firstItem = makeItem();
+            String firstName = firstItemInfo.xpath("//h3/text()").get();
+            firstItem.setItemName(firstName);
+            firstItem.setItemFullName(firstName + "/");
+            firstItem.setItemFatherId("0");
+            items.add(firstItem);
+            //准备一级条目对应下的二级条目
+            List<Selectable> secondItemsOfFirstItem = secondItemInfo.xpath("//dt").nodes();
+            List<Selectable> thirdItemsOfFirstItem = secondItemInfo.xpath("//dd").nodes();
+            for (int j = 0; j < secondItemsOfFirstItem.size(); j++) {
+                Selectable secondItemInfoOfFirstItem = secondItemsOfFirstItem.get(j);
+                Selectable thirdItemsInfo = thirdItemsOfFirstItem.get(j);
+                //生成二级条目
+                StoreGoodsItem secondItem = makeItem();
+                String secondName = secondItemInfoOfFirstItem.xpath("//a/text()").get();
+                secondItem.setItemName(secondName);
+                secondItem.setItemFatherId(firstItem.getItemId());
+                secondItem.setItemFullName(firstName + "/" + secondName + "/");
+                items.add(secondItem);
+                //准备三级条目
+                List<Selectable> thirdItems = thirdItemsInfo.xpath("//a").nodes();
+                for (Selectable thirdItemInfo : thirdItems) {
+                    StoreGoodsItem thirdItem = makeItem();
+                    String thirdName = thirdItemInfo.xpath("//a/text()").get();
+                    System.out.println("三级条目名称    " + thirdName);
+                    thirdItem.setItemName(thirdName);
+                    thirdItem.setItemFatherId(secondItem.getItemId());
+                    thirdItem.setItemFullName(secondItem.getItemFullName() + thirdName + "/");
+                    items.add(thirdItem);
+                    StoreLabel label = new StoreLabel();
+                    label.setLabelId(UuidUtils.getUUID());
+                    label.setCreateTime(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(new Date()));
+                    label.setLabelName(thirdName);
+                    label.setLabelSort(999);
+                    label.setStatus(1);
+                    label.setCreateUser("0X000");
+                    labels.add(label);
+                }
+            }
+
+        }
+
+
+        page.putField("items", items);
+        page.putField("labels", labels);
+    }
+
+
+    public StoreGoodsItem makeItem() {
         StoreGoodsItem item = new StoreGoodsItem();
         //条目ID
         item.setItemId(UuidUtils.getUUID());
-
-
-        //条目名字
-
-
-        //父条目ID
-
-
-        //条目全名（从父条目名字开始）
-
 
         //条目索引
         item.setItemIndex(1);
@@ -77,11 +116,9 @@ public class ItemProcessor implements PageProcessor {
         item.setItemCreateTime(dateFormat.format(date));
         //条目状态，1是启用，9是禁用
         item.setItemStatus(1);
-
-
-        page.putField("items", items);
-        page.putField("labels", labels);
+        return item;
     }
+
 
     @Override
     public Site getSite() {
