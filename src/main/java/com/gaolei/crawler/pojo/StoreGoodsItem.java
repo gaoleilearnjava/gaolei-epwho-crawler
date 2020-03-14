@@ -1,6 +1,7 @@
 package com.gaolei.crawler.pojo;
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -60,11 +61,16 @@ public class StoreGoodsItem implements Serializable {
     @Column(name = "item_status", nullable = false)
     private Integer itemStatus;
 
+    @Column(name = "item_grand_father_id")
+    private String itemGrandFatherId;
+
+    @Column(name = "item_generation")
+    private Integer itemGeneration;
     /**
      * 类目描述
      */
     @Column(name = "item_note")
     private String itemNote;
 
-    
+
 }

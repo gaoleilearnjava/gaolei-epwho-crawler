@@ -33,7 +33,6 @@ public class CompanyProcessor implements PageProcessor {
     public void process(Page page) {
         String url = page.getUrl().get();
         System.out.println(url);
-        System.out.println(page);
         if (url.contains("search")) {
 
             //列表页应该爬取详情页

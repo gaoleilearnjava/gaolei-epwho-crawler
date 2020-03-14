@@ -5,14 +5,10 @@ import com.gaolei.crawler.pojo.StoreGoodsItem;
 import com.gaolei.crawler.pojo.StoreLabel;
 import com.gaolei.crawler.util.UuidUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
-import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
-import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Selectable;
 
 import java.text.SimpleDateFormat;
@@ -58,6 +54,8 @@ public class ItemProcessor implements PageProcessor {
             firstItem.setItemName(firstName);
             firstItem.setItemFullName(firstName + "/");
             firstItem.setItemFatherId("0");
+            firstItem.setItemGrandFatherId("0");
+            firstItem.setItemGeneration(1);
             items.add(firstItem);
             //准备一级条目对应下的二级条目
             List<Selectable> secondItemsOfFirstItem = secondItemInfo.xpath("//dt").nodes();
@@ -71,6 +69,8 @@ public class ItemProcessor implements PageProcessor {
                 secondItem.setItemName(secondName);
                 secondItem.setItemFatherId(firstItem.getItemId());
                 secondItem.setItemFullName(firstName + "/" + secondName + "/");
+                secondItem.setItemGrandFatherId("0");
+                secondItem.setItemGeneration(2);
                 items.add(secondItem);
                 //准备三级条目
                 List<Selectable> thirdItems = thirdItemsInfo.xpath("//a").nodes();
@@ -81,15 +81,9 @@ public class ItemProcessor implements PageProcessor {
                     thirdItem.setItemName(thirdName);
                     thirdItem.setItemFatherId(secondItem.getItemId());
                     thirdItem.setItemFullName(secondItem.getItemFullName() + thirdName + "/");
+                    thirdItem.setItemGrandFatherId(firstItem.getItemId());
+                    thirdItem.setItemGeneration(3);
                     items.add(thirdItem);
-                    StoreLabel label = new StoreLabel();
-                    label.setLabelId(UuidUtils.getUUID());
-                    label.setCreateTime(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(new Date()));
-                    label.setLabelName(thirdName);
-                    label.setLabelSort(999);
-                    label.setStatus(1);
-                    label.setCreateUser("0X000");
-                    labels.add(label);
                 }
             }
 
@@ -109,7 +103,6 @@ public class ItemProcessor implements PageProcessor {
         //条目索引
         item.setItemIndex(1);
 
-
         //条目创建时间
         Date date = new Date(System.currentTimeMillis());
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss");
@@ -125,19 +118,19 @@ public class ItemProcessor implements PageProcessor {
         return this.site;
     }
 
-
-    /**
-     * 正式任务执行方法
-     */
-    //定时任务,开始爬虫,每小时执行一次
-    @Scheduled(cron = "0 0 * * * ?")
-    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
-    public void process() {
-        Spider.create(new ItemProcessor())
-                .addUrl("http://www.hbzhan.com/product/newtype.html")//添加网址
-                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
-                .addPipeline(itemPipeline)//添加pipeline
-                .thread(1)//设置多线程
-                .run();//启动
-    }
+//
+//    /**
+//     * 正式任务执行方法
+//     */
+//    //定时任务,开始爬虫,每小时执行一次
+//    @Scheduled(cron = "0 0 * * * ?")
+//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
+//    public void process() {
+//        Spider.create(new ItemProcessor())
+//                .addUrl("http://www.hbzhan.com/product/newtype.html")//添加网址
+//                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加布隆过滤器)//添加任务队列
+//                .addPipeline(itemPipeline)//添加pipeline
+//                .thread(1)//设置多线程
+//                .run();//启动
+//    }
 }
