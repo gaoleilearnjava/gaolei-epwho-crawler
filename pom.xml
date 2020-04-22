@@ -58,12 +58,6 @@
             <version>1.1.9</version>
         </dependency>
 
-        <!--springboot的测试依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
         <!--lombok神奇插件,告别set get-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -71,18 +65,10 @@
             <version>1.18.10</version>
         </dependency>
         <dependency>
-            <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-selenium</artifactId>
-            <version>0.7.3</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.5</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.csource.common</groupId>
-            <artifactId>fastdfs</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-
-
     </dependencies>
 
     <!--在添加了该插件之后，当运行“mvn package”进行打包时，会打包成一个可以直接运行的JAR文件，
