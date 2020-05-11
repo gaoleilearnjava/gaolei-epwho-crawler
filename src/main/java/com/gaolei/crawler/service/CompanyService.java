@@ -1,6 +1,7 @@
 package com.gaolei.crawler.service;
 
 import com.gaolei.crawler.pojo.CompanyInfo;
+import com.gaolei.crawler.pojo.CompanyInfo2;
 
 import java.util.List;
 
@@ -11,5 +12,12 @@ import java.util.List;
  */
 public interface CompanyService {
     void addCompanyInfo(List<CompanyInfo> companies);
+
     void addOneCompany(CompanyInfo company);
+
+    void addOldCompany(String psCode, String psName1, String psName2, String corporationCode);
+
+    void updateCompany(CompanyInfo2 companyInfo2);
+
+    CompanyInfo2 findPsCodeByOldName(String oldName);
 }

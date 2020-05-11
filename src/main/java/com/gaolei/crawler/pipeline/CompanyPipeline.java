@@ -1,6 +1,6 @@
 package com.gaolei.crawler.pipeline;
 
-import com.gaolei.crawler.pojo.CompanyInfo;
+import com.gaolei.crawler.pojo.CompanyInfo2;
 import com.gaolei.crawler.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -20,12 +20,13 @@ public class CompanyPipeline implements Pipeline {
 
     @Override
     public void process(ResultItems resultItems, Task task) {
-        CompanyInfo company = resultItems.get("company");
+        CompanyInfo2 company = resultItems.get("company");
         if (company != null) {
             try {
-                companyService.addOneCompany(company);
+                companyService.updateCompany(company);
             } catch (Exception e) {
-                System.out.println("公司重复，跳过");
+                System.out.println("出问题啦！！！！原因如下");
+                e.printStackTrace();
             }
         }
     }
