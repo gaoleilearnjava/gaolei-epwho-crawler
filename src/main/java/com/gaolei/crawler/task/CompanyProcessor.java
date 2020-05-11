@@ -3,21 +3,12 @@ package com.gaolei.crawler.task;
 import com.gaolei.crawler.pipeline.CompanyPipeline;
 import com.gaolei.crawler.pojo.CompanyInfo2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
-import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Selectable;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -173,55 +164,55 @@ public class CompanyProcessor implements PageProcessor {
         return this.site;
     }
 
-    /**
-     * 正式任务执行方法
-     */
-    //定时任务,开始爬虫,每小时执行一次
-    @Scheduled(cron = "0 0 * * * ?")
-    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
-    public void process() throws IOException {
-        InputStream fileStream = this.getClass().getResourceAsStream("/list1.txt");
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileStream, StandardCharsets.UTF_8));
-        //读取的原始文件每一行信息
-        String line = "";
-        List<CompanyInfo2> companyInfo2List = new ArrayList<>();
-        while ((line = bufferedReader.readLine()) != null) {
-            //对读取的每一行信息进行处理
-            //对每一行数据进行拆分
-            String[] values = line.split("\\s");
-            if (values.length < 3) {
-                continue;
-            }
-            String psCode;
-            String psName1;
-            String psName2;
-            String corporationCode = "";
-            psCode = values[0];
-            if (psCode.length() == 13) {
-                psCode = psCode.substring(1);
-            }
-            psName1 = values[1];
-            psName2 = values[2];
-            if (psName1.length() <= 3 || psName2.length() <= 3) {
-                continue;
-            }
-            if (values.length == 4) {
-                corporationCode = values[3];
-            }
-            CompanyInfo2 company = new CompanyInfo2();
-            company.setPscode(psCode);
-            company.setPsname1(psName1);
-            company.setPsname2(psName2);
-            companyInfo2List.add(company);
-        }
-        this.companyInfoList = companyInfo2List;
-        bufferedReader.close();
-        Spider spider = Spider.create(this)
-                .setScheduler(new QueueScheduler())//添加任务队列
-                .addPipeline(companyPipeline)//添加pipeline
-                .thread(1);//设置多线程
-        spider.addUrl("https://shuidi.cn/b-search?key=" + this.companyInfoList.get(start).getPsname2());
-        spider.run();
-    }
+//    /**
+//     * 正式任务执行方法
+//     */
+//    //定时任务,开始爬虫,每小时执行一次
+//    @Scheduled(cron = "0 0 * * * ?")
+//    @Scheduled(initialDelay = 1000, fixedDelay = 1000 * 1000)
+//    public void process() throws IOException {
+//        InputStream fileStream = this.getClass().getResourceAsStream("/list1.txt");
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileStream, StandardCharsets.UTF_8));
+//        //读取的原始文件每一行信息
+//        String line = "";
+//        List<CompanyInfo2> companyInfo2List = new ArrayList<>();
+//        while ((line = bufferedReader.readLine()) != null) {
+//            //对读取的每一行信息进行处理
+//            //对每一行数据进行拆分
+//            String[] values = line.split("\\s");
+//            if (values.length < 3) {
+//                continue;
+//            }
+//            String psCode;
+//            String psName1;
+//            String psName2;
+//            String corporationCode = "";
+//            psCode = values[0];
+//            if (psCode.length() == 13) {
+//                psCode = psCode.substring(1);
+//            }
+//            psName1 = values[1];
+//            psName2 = values[2];
+//            if (psName1.length() <= 3 || psName2.length() <= 3) {
+//                continue;
+//            }
+//            if (values.length == 4) {
+//                corporationCode = values[3];
+//            }
+//            CompanyInfo2 company = new CompanyInfo2();
+//            company.setPscode(psCode);
+//            company.setPsname1(psName1);
+//            company.setPsname2(psName2);
+//            companyInfo2List.add(company);
+//        }
+//        this.companyInfoList = companyInfo2List;
+//        bufferedReader.close();
+//        Spider spider = Spider.create(this)
+//                .setScheduler(new QueueScheduler())//添加任务队列
+//                .addPipeline(companyPipeline)//添加pipeline
+//                .thread(1);//设置多线程
+//        spider.addUrl("https://shuidi.cn/b-search?key=" + this.companyInfoList.get(start).getPsname2());
+//        spider.run();
+//    }
 }
 
