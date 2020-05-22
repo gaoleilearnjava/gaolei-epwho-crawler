@@ -150,23 +150,22 @@ public class EpwhoProcessor implements PageProcessor {
         for (Selectable s : list) {
             String name = s.xpath("//td[1]/text()").toString();
 
-            if(name.startsWith("产品"))
-            {
+            if (name.startsWith("产品")) {
                 String value = s.xpath("//td[2]/h1/text()").toString();
-            }else{
+            } else {
                 String value = s.xpath("//td[2]/text()").toString();
-                if(name.startsWith("品牌")){
+                if (name.startsWith("品牌")) {
                     product.setProduct_brand(value);
-                }else if(name.startsWith("单价")){
+                } else if (name.startsWith("单价")) {
                     product.setProduct_price(value);
-                }else if(name.startsWith("最小起订量")){
+                } else if (name.startsWith("最小起订量")) {
                     product.setProduct_min_ordered(value);
-                }else if(name.startsWith("供货总量")){
+                } else if (name.startsWith("供货总量")) {
                     product.setProduct_supply(value);
-                }else if(name.startsWith("发货期限")){
-                    value = s.xpath("//td[2]").toString().replaceAll("</?[^<]+>","").replaceAll("&nbsp;","").replaceAll(" ","");
+                } else if (name.startsWith("发货期限")) {
+                    value = s.xpath("//td[2]").toString().replaceAll("</?[^<]+>", "").replaceAll("&nbsp;", "").replaceAll(" ", "");
                     product.setProduct_send_term(value);
-                }else if(name.startsWith("有效期至")){
+                } else if (name.startsWith("有效期至")) {
                     product.setProduct_valid_term(value);
                 } else if (name.startsWith("最后更新")) {
                     product.setUpdate_time(value);

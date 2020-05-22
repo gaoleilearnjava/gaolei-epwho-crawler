@@ -1,11 +1,52 @@
 ${AnsiColor.BRIGHT_GREEN}
+                                       .  .  E        i  G  f  j  G        L        f
+                                         #           .                                   f
+                                      :                                                        ;
+                             .                                                                    t
+                             .  ,           i                                                        :
+                             .           L                                                              .
+                          :        :  :  .                 :                                            i
+                       D                    f           G                                   i
+                                   f                 .              #                             :        D  .
+                    j  .     :  .     .  ;        .  .                 .     G  .              :  .
+                    L           t                 i  .        .     .  j        :           .  .              ,
+                                      f        :  .     E  .  D           i  .  :  .              i  f        L
+                 .        D  :              f           .  E  .                    :  .  f
+                 E     .              .  .  E        .  :  .                          f           .  ;
+                 i                 L     G  .     ,     j                       j  .  j  .        L  :  j
+                 .     ,  t              ;  ;  j     :                          :  G     K  j     .     G
+                       ;  .           .  L  j  .                                      i  i  ,     .     .
+                                         .                                                  f     .     ;
+                                f     j     :  .                                            :           E     ;
+                                G     E  t  W  K  t  f                       .  f  #  G  G     j     :  G     D
+                       :        t  ;  i              #                       #              #  L     E  t     L
+                                .     t  #  #  #  W  .                       .  #  #  #  K     E     #  f     :
+                                      G              #                       .   K   #  f  D  .     t  :     .
+              .     .     ,           G  t  W  K  :  i          l            f  #  #  i  W  .  .     K     t
+              j     .     L                                     l                              :     D     i  .
+           .  K     E     G                                   : l :                            i     f  E  K  .
+              i  .        L                                                                    f  i  ,  ;  i  ,
+                          t                                                                    G  j  t  i     j
+                 G        .                                                                    j  j     ;     W
+           t  .  .        .                                                                       G           D
+              E           .                          i                 i                    ;  .  K           f  .
+                                                        i           i                       #     G           L
+        L              .                 K                 i  . i  i                     #  #     t     j     K  :
+        L  .           t  .              D  K                                         G  K  ;     .     L     E  G
+     .  f              L        .        ,  f  W                                   t           .              G  i
+                       j        :           t  t  D  W  ,                    #  f     G  G     L  t  L  f     :  G
+  L  .     :                          .     i  i  G  W  D  E  #     .  #     j  ;  f     j     G  t  .           G
+     f     ,  .                       j     #  t  E  W              .        G     .  E  .  .  j  .  ,           ,
+     K     t                    .     j     t  W  W  f                       G  D  :  G                 .
+     G     G                       .  ;           L  ,                       j        f     G  E           :  G
 
-  ________              .__         .__  /\       _________                      .__
- /  _____/_____    ____ |  |   ____ |__| )/______ \_   ___ \____________ __  _  _|  |   ___________
-/   \  ___\__  \  /  _ \|  | _/ __ \|  |  /  ___/ /    \  \/\_  __ \__  \\ \/ \/ /  | _/ __ \_  __ \
-\    \_\  \/ __ \(  <_> )  |_\  ___/|  |  \___ \  \     \____|  | \// __ \\     /|  |_\  ___/|  | \/
- \______  (____  /\____/|____/\___  >__| /____  >  \______  /|__|  (____  /\/\_/ |____/\___  >__|
-        \/     \/                 \/          \/          \/            \/                 \/
+
+
+
+
+
+
+
 
 
 ${AnsiColor.BRIGHT_RED}

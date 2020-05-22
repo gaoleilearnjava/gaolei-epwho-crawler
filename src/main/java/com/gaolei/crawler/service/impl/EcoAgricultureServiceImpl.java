@@ -30,6 +30,11 @@ public class EcoAgricultureServiceImpl implements EcoAgricultureService {
     }
 
     @Override
+    public int getItemIdByItemName(String itemName) {
+        return ecoAgricultureItemsRepository.getItemIdByItemName(itemName);
+    }
+
+    @Override
     public void addProduct(EcoAgricultureProducts ecoAgricultureProducts) {
         ecoAgricultureProductsRepository.saveAndFlush(ecoAgricultureProducts);
     }

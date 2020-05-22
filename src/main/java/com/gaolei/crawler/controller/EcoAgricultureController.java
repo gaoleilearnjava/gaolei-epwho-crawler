@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
-import us.codecraft.webmagic.scheduler.QueueScheduler;
+import us.codecraft.webmagic.scheduler.PriorityScheduler;
 
 import java.io.IOException;
 
@@ -33,10 +33,11 @@ public class EcoAgricultureController {
     @GetMapping("/start")
     public void process() throws IOException {
         Spider.create(ecoAgricultureProcessor)
-                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10 * 10000)))//添加任务队列
+                .setScheduler(new PriorityScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(1000_0)))
                 .addPipeline(ecoAgriculturePipeline)
                 .thread(1)
-                .addUrl("https://www.cnhnb.com/")
+                .addUrl("https://www.cnhnb.com/p/sgzw/")
+//                .addUrl("https://www.cnhnb.com/p/sczw/")
                 .run();
     }
 }

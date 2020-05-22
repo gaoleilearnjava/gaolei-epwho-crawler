@@ -67,8 +67,8 @@ public class EcoAgricultureProducts implements Serializable {
     /**
      * 产品详情
      */
-    @Column(name = "product_detail")
-    private String productDetail;
+    @Column(name = "product_word_detail")
+    private String productWordDetail;
 
     /**
      * 产品发货地址
@@ -118,5 +118,16 @@ public class EcoAgricultureProducts implements Serializable {
     @Column(name = "product_item", nullable = false)
     private Integer productItem;
 
-    
+    /**
+     * 产品所属的视频详情
+     */
+    @Column(name = "product_video_detail")
+    private String productVideoDetail;
+
+    /**
+     * 产品所属的图片详情
+     */
+    @Column(name = "product_pic_detail")
+    private String productPicDetail;
+
 }

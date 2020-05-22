@@ -245,9 +245,9 @@ public class HbProcessor implements PageProcessor {
                     String location = parameterList[3];
                     product.setProduct_location(location);
                     //获取更新时间
-                    String updateTime = parameterList[4] +" "+ parameterList[5];
+                    String updateTime = parameterList[4] + " " + parameterList[5];
                     product.setUpdate_time(updateTime);
-                } else if (parameterList.length == 6){
+                } else if (parameterList.length == 6) {
                     //获取厂商性质
                     String companyType = parameterList[1];
                     product.setCompany_type(companyType);
@@ -255,7 +255,7 @@ public class HbProcessor implements PageProcessor {
                     String location = parameterList[2];
                     product.setProduct_location(location);
                     //获取更新时间
-                    String updateTime = parameterList[3] +" "+ parameterList[4];
+                    String updateTime = parameterList[3] + " " + parameterList[4];
                     product.setUpdate_time(updateTime);
                 }
             }

@@ -11,5 +11,7 @@ import com.gaolei.crawler.pojo.EcoAgricultureProducts;
 public interface EcoAgricultureService {
     void addItem(EcoAgricultureItems ecoAgricultureItems);
 
+    int getItemIdByItemName(String itemName);
+
     void addProduct(EcoAgricultureProducts ecoAgricultureProducts);
 }
